@@ -11,79 +11,79 @@ namespace Web
 {
 
 
-    public partial class _Default
+    public partial class Contact
     {
 
         /// <summary>
-        /// headingTitle control.
+        /// EncabezadoPrincipal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal headingTitle;
+        protected global::System.Web.UI.WebControls.Literal EncabezadoPrincipal;
 
         /// <summary>
-        /// EmpresaDescripcion control.
+        /// Literal1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal EmpresaDescripcion;
+        protected global::System.Web.UI.WebControls.Literal Literal1;
 
         /// <summary>
-        /// EncabezadoPrevencionTradicional control.
+        /// Literal2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal EncabezadoPrevencionTradicional;
+        protected global::System.Web.UI.WebControls.Literal Literal2;
 
         /// <summary>
-        /// DescriptionPrevencionTradicional control.
+        /// Literal3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal DescriptionPrevencionTradicional;
+        protected global::System.Web.UI.WebControls.Literal Literal3;
 
         /// <summary>
-        /// EncabezadoGestionDigital control.
+        /// Literal4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal EncabezadoGestionDigital;
+        protected global::System.Web.UI.WebControls.Literal Literal4;
 
         /// <summary>
-        /// DescripcionGestionDigital control.
+        /// LinkMailSoporte control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal DescripcionGestionDigital;
+        protected global::System.Web.UI.WebControls.HyperLink LinkMailSoporte;
 
         /// <summary>
-        /// EncabezadoPrevencionIA control.
+        /// Literal5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal EncabezadoPrevencionIA;
+        protected global::System.Web.UI.WebControls.Literal Literal5;
 
         /// <summary>
-        /// DescripcionPrevencionIA control.
+        /// HyperLink1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal DescripcionPrevencionIA;
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
     }
 }

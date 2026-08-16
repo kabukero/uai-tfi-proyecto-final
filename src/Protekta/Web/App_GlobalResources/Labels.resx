@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Default.DescripcionEmpresa" xml:space="preserve">
+    <value>La Seguridad e Higiene Laboral representan un campo multidisciplinario que tiene por objeto primordial, proteger la vida y preservar la salud y el bienestar de los trabajadores. Uno de los aspectos más importantes dentro de las Organizaciones es la Prevención de los Riesgos Laborales, dado que una buena prevención de riesgos, mejora la relación equipo – empresa, creando un vínculo de compromiso que es beneficioso para ambas partes.</value>
+  </data>
+  <data name="Default.EncabezadoPrincipal" xml:space="preserve">
+    <value>Servicio de higiene y seguridad</value>
+  </data>
+  <data name="Default.TituloPagina" xml:space="preserve">
+    <value>Home Page</value>
+  </data>
+  <data name="Default.EncabezadoPrevencionTradicional" xml:space="preserve">
+    <value>Prevención tradicional</value>
+  </data>
+  <data name="Default.DescripcionPrevencionTradicional" xml:space="preserve">
+    <value>Profesionales de Higiene y Seguridad + auditorías + mediciones + procedimientos + capacitación.</value>
+  </data>
+  <data name="Default.BotonContratar" xml:space="preserve">
+    <value>Contratar &gt;</value>
+  </data>
+  <data name="Default.EncabezadoGestionDigital" xml:space="preserve">
+    <value>Gestión digital</value>
+  </data>
+  <data name="Default.DescripcionGestionDigital" xml:space="preserve">
+    <value>Plataforma para gestionar riesgos, incidentes, auditorías, EPP, capacitaciones y acciones correctivas.</value>
+  </data>
+  <data name="Default.EncabezadoPrevencionIA" xml:space="preserve">
+    <value>Prevención inteligente con IA</value>
+  </data>
+  <data name="Default.DescripcionPrevencionIA" xml:space="preserve">
+    <value>Inteligencia Artificial que analiza el entorno operativo, identifica situaciones de riesgo y genera alertas para intervenir antes de que ocurra un accidente.</value>
+  </data>
+  <data name="AcercaDe.DescripcionAcercaDe" xml:space="preserve">
+    <value>La Seguridad e Higiene Laboral representan un campo multidisciplinario que tiene por objeto primordial, proteger la vida y preservar la salud y el bienestar de los trabajadores. 
+Uno de los aspectos más importantes dentro de las Organizaciones es la Prevención de los Riesgos Laborales, dado que una buena prevención de riesgos, mejora la relación equipo – empresa, creando un vínculo de compromiso que es beneficioso para ambas partes.
+Las buenas condiciones del ambiente laboral, aumentan la motivación de los trabajadores, la competitividad y rentabilidad de la Organización.
+Nuestro Servicio de Higiene y Seguridad esta pensado para aquellos que requieran soporte externo en la gestión de sus riesgos. Contamos con amplia trayectoria y la experiencia necesaria para brindar un servicio de excelente calidad, basándonos en los estándares de seguridad establecidos por las normas legales.</value>
+  </data>
+  <data name="AcercaDe.TextoServicio" xml:space="preserve">
+    <value>Servicio</value>
+  </data>
+  <data name="AcercaDe.TextoAsesoramientoExterno" xml:space="preserve">
+    <value>Asesoramiento externo de Higiene y Seguridad Laboral</value>
+  </data>
+  <data name="AcercaDe.TextoAsesoramientoExterno1" xml:space="preserve">
+    <value>Estadística de siniestralidad</value>
+  </data>
+  <data name="AcercaDe.TextoAsesoramientoExterno2" xml:space="preserve">
+    <value>Auditorías de diagnóstico en materia de seguridad laboral</value>
+  </data>
+  <data name="AcercaDe.TextoAsesoramientoExterno3" xml:space="preserve">
+    <value>Planes de Evacuación y entrenamiento de brigadas de Emergencia a cargo de profesional idóneo</value>
+  </data>
+  <data name="AcercaDe.TextoAsesoramientoExterno4" xml:space="preserve">
+    <value>Realización de evaluaciones de riesgo</value>
+  </data>
+  <data name="AcercaDe.TextoAsesoramientoExterno5" xml:space="preserve">
+    <value>Organización de Comités de Seguridad</value>
+  </data>
+  <data name="AcercaDe.TextoAsesoramientoExterno6" xml:space="preserve">
+    <value>Representación ante inspecciones de Organismos de Contralor</value>
+  </data>
+  <data name="AcercaDe.TextoAsesoramientoExterno7" xml:space="preserve">
+    <value>Programas de Seguridad</value>
+  </data>
+  <data name="AcercaDe.TextoAsesoramientoExterno8" xml:space="preserve">
+    <value>Confección de mapas de riesgos, analizando los riesgos por puestos de trabajo y áreas</value>
+  </data>
+  <data name="AcercaDe.TextoAsesoramientoExterno9" xml:space="preserve">
+    <value>Estudios de carga de fuego</value>
+  </data>
+  <data name="AcercaDe.TextoAsesoramientoExterno10" xml:space="preserve">
+    <value>Estudios de nivel sonoro</value>
+  </data>
+  <data name="AcercaDe.TextoAsesoramientoExterno11" xml:space="preserve">
+    <value>Estudios de niveles lumínicos</value>
+  </data>
+  <data name="AcercaDe.TextoAsesoramientoExterno12" xml:space="preserve">
+    <value>Estudios de puesta a tierra y continuidad de las masas</value>
+  </data>
+  <data name="AcercaDe.TextoAsesoramientoExterno13" xml:space="preserve">
+    <value>Estudios de vibraciones mano-brazo y cuerpo entero</value>
+  </data>
+  <data name="AcercaDe.TextoAsesoramientoExterno14" xml:space="preserve">
+    <value>Estudios de carga térmica</value>
+  </data>
+  <data name="AcercaDe.TextoAsesoramientoExterno15" xml:space="preserve">
+    <value>Investigación de accidentes de trabajo</value>
+  </data>
+  <data name="AcercaDe.TextoAsesoramientoExterno16" xml:space="preserve">
+    <value>Entrenamiento y capacitación según las necesidades de cada cliente, in situ y a través de plataforma</value>
+  </data>
+  <data name="AcercaDe.TextoAsesoramientoExterno17" xml:space="preserve">
+    <value>Confección de Procedimientos Seguros de Trabajo</value>
+  </data>
+  <data name="AcercaDe.TextoServicioIA1" xml:space="preserve">
+    <value>Monitoreo de seguridad mediante IA en tiempo real.</value>
+  </data>
+  <data name="AcercaDe.TextoServicioIA2" xml:space="preserve">
+    <value>Detección automática de actos y condiciones inseguras.</value>
+  </data>
+  <data name="AcercaDe.TextoServicioIA3" xml:space="preserve">
+    <value>Detección de incumplimientos en el uso de EPP.</value>
+  </data>
+  <data name="AcercaDe.TextoServicioIA4" xml:space="preserve">
+    <value>Detección de ingreso o permanencia en zonas restringidas.</value>
+  </data>
+  <data name="AcercaDe.TextoServicioIA5" xml:space="preserve">
+    <value>Identificación de comportamientos potencialmente peligrosos.</value>
+  </data>
+  <data name="AcercaDe.TextoServicioIA6" xml:space="preserve">
+    <value>Generación de alertas automáticas ante situaciones de riesgo.</value>
+  </data>
+  <data name="AcercaDe.TextoServicioIA7" xml:space="preserve">
+    <value>Monitoreo inteligente de zonas críticas y maquinaria.</value>
+  </data>
+  <data name="AcercaDe.TextoServicioIA8" xml:space="preserve">
+    <value>Análisis de patrones de comportamiento y situaciones de riesgo.</value>
+  </data>
+  <data name="AcercaDe.TextoServicioIA9" xml:space="preserve">
+    <value>Generación de indicadores inteligentes de seguridad.</value>
+  </data>
+  <data name="AcercaDe.TextoServicioIA10" xml:space="preserve">
+    <value>Predicción y prevención de posibles accidentes.</value>
+  </data>
+  <data name="AcercaDe.TextoServicioIA11" xml:space="preserve">
+    <value>Generación automática de reportes de seguridad.</value>
+  </data>
+  <data name="AcercaDe.TextoServicioIA12" xml:space="preserve">
+    <value>Seguimiento inteligente de acciones correctivas.</value>
+  </data>
+  <data name="AcercaDe.TextoServicioIA13" xml:space="preserve">
+    <value>Integración de la IA con la gestión de incidentes, auditorías, capacitaciones y mapas de riesgos.</value>
+  </data>
+  <data name="AcercaDe.TextoServicioIA14" xml:space="preserve">
+    <value>Prevención continua de riesgos combinando la supervisión de profesionales de Seguridad e Higiene con IA.</value>
+  </data>
+  <data name="AcercaDe.TextoServicioIA" xml:space="preserve">
+    <value>Servicios de Inteligencia Artificial</value>
+  </data>
+  <data name="Contacto.Encabezado" xml:space="preserve">
+    <value>Su pagina de contacto.</value>
+  </data>
+  <data name="Contacto.DireccionTitulo" xml:space="preserve">
+    <value>Direccion de Protekta</value>
+  </data>
+  <data name="Contacto.Direccion" xml:space="preserve">
+    <value>Argentina, CABA, Av. Cabildo 123</value>
+  </data>
+  <data name="Contacto.Telefono" xml:space="preserve">
+    <value>425.555.0100</value>
+  </data>
+  <data name="Contacto.TextoSoporte" xml:space="preserve">
+    <value>Soporte:</value>
+  </data>
+  <data name="Contacto.TextoMarketing" xml:space="preserve">
+    <value>Marketing:</value>
+  </data>
+  <data name="Contacto.SoporteEmail" xml:space="preserve">
+    <value>soporte@protekta.com</value>
+  </data>
+  <data name="Contacto.MarketingMail" xml:space="preserve">
+    <value>marketing@protekta.com</value>
+  </data>
+  <data name="Master.TextoLinkHome" xml:space="preserve">
+    <value>Inicio</value>
+  </data>
+  <data name="Master.TextoLinkAcercaDe" xml:space="preserve">
+    <value>Acerca de</value>
+  </data>
+  <data name="Master.TextoLinkContacto" xml:space="preserve">
+    <value>Contacto</value>
+  </data>
+</root>

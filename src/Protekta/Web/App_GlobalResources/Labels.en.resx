@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Default.DescripcionEmpresa" xml:space="preserve">
+    <value>Occupational Health and Safety is a multidisciplinary field whose primary objective is to protect the lives and preserve the health and well-being of workers. One of the most important aspects within organizations is Occupational Risk Prevention, as effective risk prevention improves the relationship between the team and the company, creating a commitment that benefits both parties.</value>
+  </data>
+  <data name="Default.EncabezadoPrincipal" xml:space="preserve">
+    <value>Occupational Health and Safety Services</value>
+  </data>
+  <data name="Default.TituloPagina" xml:space="preserve">
+    <value>Home Page</value>
+  </data>
+  <data name="Default.EncabezadoPrevencionTradicional" xml:space="preserve">
+    <value>Traditional Prevention</value>
+  </data>
+  <data name="Default.DescripcionPrevencionTradicional" xml:space="preserve">
+    <value>Occupational Health and Safety professionals + audits + measurements + procedures + training.</value>
+  </data>
+  <data name="Default.BotonContratar" xml:space="preserve">
+    <value>Hire &gt;</value>
+  </data>
+  <data name="Default.EncabezadoGestionDigital" xml:space="preserve">
+    <value>Digital Management</value>
+  </data>
+  <data name="Default.DescripcionGestionDigital" xml:space="preserve">
+    <value>Platform for managing risks, incidents, audits, PPE, training, and corrective actions.</value>
+  </data>
+  <data name="Default.EncabezadoPrevencionIA" xml:space="preserve">
+    <value>AI-Powered Intelligent Prevention</value>
+  </data>
+  <data name="Default.DescripcionPrevencionIA" xml:space="preserve">
+    <value>Artificial Intelligence analyzes the operational environment, identifies risk situations, and generates alerts to enable intervention before an accident occurs.</value>
+  </data>
+  <data name="AcercaDe.DescripcionAcercaDe" xml:space="preserve">
+    <value>Occupational Health and Safety is a multidisciplinary field whose primary objective is to protect the lives and preserve the health and well-being of workers.
+One of the most important aspects within organizations is Occupational Risk Prevention, as effective risk prevention improves the relationship between the team and the company, creating a commitment that benefits both parties.
+Good working environment conditions increase employee motivation, competitiveness, and organizational profitability.
+Our Occupational Health and Safety Service is designed for organizations that require external support in managing their risks. We have extensive experience and the expertise necessary to provide high-quality services based on the safety standards established by applicable legislation.</value>
+  </data>
+  <data name="AcercaDe.TextoServicio" xml:space="preserve">
+    <value>Services</value>
+  </data>
+  <data name="AcercaDe.TextoAsesoramientoExterno" xml:space="preserve">
+    <value>External Occupational Health and Safety Consulting</value>
+  </data>
+  <data name="AcercaDe.TextoAsesoramientoExterno1" xml:space="preserve">
+    <value>Accident Statistics</value>
+  </data>
+  <data name="AcercaDe.TextoAsesoramientoExterno2" xml:space="preserve">
+    <value>Occupational Safety Diagnostic Audits</value>
+  </data>
+  <data name="AcercaDe.TextoAsesoramientoExterno3" xml:space="preserve">
+    <value>Emergency Evacuation Plans and Emergency Response Team Training conducted by qualified professionals</value>
+  </data>
+  <data name="AcercaDe.TextoAsesoramientoExterno4" xml:space="preserve">
+    <value>Risk Assessments</value>
+  </data>
+  <data name="AcercaDe.TextoAsesoramientoExterno5" xml:space="preserve">
+    <value>Safety Committee Organization</value>
+  </data>
+  <data name="AcercaDe.TextoAsesoramientoExterno6" xml:space="preserve">
+    <value>Representation before Regulatory and Inspection Authorities</value>
+  </data>
+  <data name="AcercaDe.TextoAsesoramientoExterno7" xml:space="preserve">
+    <value>Safety Programs</value>
+  </data>
+  <data name="AcercaDe.TextoAsesoramientoExterno8" xml:space="preserve">
+    <value>Risk Mapping, analyzing risks by job position and work area</value>
+  </data>
+  <data name="AcercaDe.TextoAsesoramientoExterno9" xml:space="preserve">
+    <value>Fire Load Assessments</value>
+  </data>
+  <data name="AcercaDe.TextoAsesoramientoExterno10" xml:space="preserve">
+    <value>Noise Level Assessments</value>
+  </data>
+  <data name="AcercaDe.TextoAsesoramientoExterno11" xml:space="preserve">
+    <value>Lighting Level Assessments</value>
+  </data>
+  <data name="AcercaDe.TextoAsesoramientoExterno12" xml:space="preserve">
+    <value>Grounding and Electrical Continuity Assessments</value>
+  </data>
+  <data name="AcercaDe.TextoAsesoramientoExterno13" xml:space="preserve">
+    <value>Hand-Arm and Whole-Body Vibration Assessments</value>
+  </data>
+  <data name="AcercaDe.TextoAsesoramientoExterno14" xml:space="preserve">
+    <value>Thermal Load Assessments</value>
+  </data>
+  <data name="AcercaDe.TextoAsesoramientoExterno15" xml:space="preserve">
+    <value>Workplace Accident Investigation</value>
+  </data>
+  <data name="AcercaDe.TextoAsesoramientoExterno16" xml:space="preserve">
+    <value>Training and education according to each client's needs, on-site and through our platform</value>
+  </data>
+  <data name="AcercaDe.TextoAsesoramientoExterno17" xml:space="preserve">
+    <value>Development of Safe Work Procedures</value>
+  </data>
+  <data name="AcercaDe.TextoServicioIA1" xml:space="preserve">
+    <value>Real-time AI-powered safety monitoring.</value>
+  </data>
+  <data name="AcercaDe.TextoServicioIA2" xml:space="preserve">
+    <value>Automatic detection of unsafe acts and conditions.</value>
+  </data>
+  <data name="AcercaDe.TextoServicioIA3" xml:space="preserve">
+    <value>Detection of PPE compliance violations.</value>
+  </data>
+  <data name="AcercaDe.TextoServicioIA4" xml:space="preserve">
+    <value>Detection of entry into or presence within restricted areas.</value>
+  </data>
+  <data name="AcercaDe.TextoServicioIA5" xml:space="preserve">
+    <value>Identification of potentially hazardous behaviors.</value>
+  </data>
+  <data name="AcercaDe.TextoServicioIA6" xml:space="preserve">
+    <value>Automatic alerts for hazardous situations.</value>
+  </data>
+  <data name="AcercaDe.TextoServicioIA7" xml:space="preserve">
+    <value>Intelligent monitoring of critical areas and machinery.</value>
+  </data>
+  <data name="AcercaDe.TextoServicioIA8" xml:space="preserve">
+    <value>Analysis of behavior patterns and risk situations.</value>
+  </data>
+  <data name="AcercaDe.TextoServicioIA9" xml:space="preserve">
+    <value>Generation of intelligent safety indicators.</value>
+  </data>
+  <data name="AcercaDe.TextoServicioIA10" xml:space="preserve">
+    <value>Prediction and prevention of potential accidents.</value>
+  </data>
+  <data name="AcercaDe.TextoServicioIA11" xml:space="preserve">
+    <value>Automatic generation of safety reports.</value>
+  </data>
+  <data name="AcercaDe.TextoServicioIA12" xml:space="preserve">
+    <value>Intelligent tracking of corrective actions.</value>
+  </data>
+  <data name="AcercaDe.TextoServicioIA13" xml:space="preserve">
+    <value>Integration of AI with incident management, audits, training, and risk maps.</value>
+  </data>
+  <data name="AcercaDe.TextoServicioIA14" xml:space="preserve">
+    <value>Continuous risk prevention combining the supervision of Occupational Health and Safety professionals with AI.</value>
+  </data>
+  <data name="AcercaDe.TextoServicioIA" xml:space="preserve">
+    <value>Artificial Intelligence Services</value>
+  </data>
+  <data name="Contacto.Encabezado" xml:space="preserve">
+    <value>Your Contact Page</value>
+  </data>
+  <data name="Contacto.DireccionTitulo" xml:space="preserve">
+    <value>Protekta Address</value>
+  </data>
+  <data name="Contacto.Direccion" xml:space="preserve">
+    <value>Argentina, CABA, Av. Cabildo 123</value>
+  </data>
+  <data name="Contacto.Telefono" xml:space="preserve">
+    <value>425.555.0100</value>
+  </data>
+  <data name="Contacto.TextoSoporte" xml:space="preserve">
+    <value>Support:</value>
+  </data>
+  <data name="Contacto.TextoMarketing" xml:space="preserve">
+    <value>Marketing:</value>
+  </data>
+  <data name="Contacto.SoporteEmail" xml:space="preserve">
+    <value>soporte@protekta.com</value>
+  </data>
+  <data name="Contacto.MarketingMail" xml:space="preserve">
+    <value>marketing@protekta.com</value>
+  </data>
+  <data name="Master.TextoLinkHome" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Master.TextoLinkAcercaDe" xml:space="preserve">
+    <value>About us</value>
+  </data>
+  <data name="Master.TextoLinkContacto" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+</root>

@@ -11,7 +11,23 @@ namespace Web
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                string language = "en-US";
 
+                if (Session["Language"] != null)
+                {
+                    language = Session["Language"].ToString();
+                }
+
+                ddlLanguage.SelectedValue = language;
+            }
+        }
+
+        protected void ddlLanguage_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Session["Language"] = ddlLanguage.SelectedValue;
+            Response.Redirect(Request.RawUrl);
         }
     }
 }
