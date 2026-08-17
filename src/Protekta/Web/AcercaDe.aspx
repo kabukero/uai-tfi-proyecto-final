@@ -15,6 +15,7 @@
                 runat="server"
                 Text="<%$ Resources:Labels, AcercaDe.DescripcionAcercaDe %>" />
         </p>
+        <img src="<%= ResolveUrl("~/Content/Images/protekta-logo.jpeg") %>" alt="Logo Protekta" style="max-height:200px;max-width:200px;" />
         <h3>
             <asp:Literal
                 ID="Literal2"

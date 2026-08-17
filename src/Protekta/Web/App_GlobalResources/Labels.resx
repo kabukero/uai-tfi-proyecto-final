@@ -288,4 +288,19 @@ Nuestro Servicio de Higiene y Seguridad esta pensado para aquellos que requieran
   <data name="Master.TextoLinkContacto" xml:space="preserve">
     <value>Contacto</value>
   </data>
+  <data name="Login.Encabezado" xml:space="preserve">
+    <value>Utilice una cuenta local para iniciar sesión.</value>
+  </data>
+  <data name="Login.TextoEmail" xml:space="preserve">
+    <value>Correo electrónico</value>
+  </data>
+  <data name="Login.TextoPassword" xml:space="preserve">
+    <value>Contraseña</value>
+  </data>
+  <data name="Login.TextoRegistrase" xml:space="preserve">
+    <value>Registrarse como usuario nuevo</value>
+  </data>
+  <data name="Master.TextoLinkLogin" xml:space="preserve">
+    <value>Iniciar Sesión</value>
+  </data>
 </root>

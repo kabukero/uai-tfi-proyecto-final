@@ -540,6 +540,42 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Utilice una cuenta local para iniciar sesión..
+        /// </summary>
+        internal static string Login_Encabezado {
+            get {
+                return ResourceManager.GetString("Login.Encabezado", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Correo electrónico.
+        /// </summary>
+        internal static string Login_TextoEmail {
+            get {
+                return ResourceManager.GetString("Login.TextoEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contraseña.
+        /// </summary>
+        internal static string Login_TextoPassword {
+            get {
+                return ResourceManager.GetString("Login.TextoPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Registrarse como usuario nuevo.
+        /// </summary>
+        internal static string Login_TextoRegistrase {
+            get {
+                return ResourceManager.GetString("Login.TextoRegistrase", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Acerca de.
         /// </summary>
         internal static string Master_TextoLinkAcercaDe {
@@ -563,6 +599,15 @@ namespace Resources {
         internal static string Master_TextoLinkHome {
             get {
                 return ResourceManager.GetString("Master.TextoLinkHome", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Iniciar Sesión.
+        /// </summary>
+        internal static string Master_TextoLinkLogin {
+            get {
+                return ResourceManager.GetString("Master.TextoLinkLogin", resourceCulture);
             }
         }
     }

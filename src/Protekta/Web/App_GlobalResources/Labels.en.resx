@@ -288,4 +288,19 @@ Our Occupational Health and Safety Service is designed for organizations that re
   <data name="Master.TextoLinkContacto" xml:space="preserve">
     <value>Contact</value>
   </data>
+  <data name="Login.Encabezado" xml:space="preserve">
+    <value>Use credentials your enter the system</value>
+  </data>
+  <data name="Login.TextoEmail" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="Login.TextoPassword" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Login.TextoRegistrase" xml:space="preserve">
+    <value>Sign up as new user</value>
+  </data>
+  <data name="Master.TextoLinkLogin" xml:space="preserve">
+    <value>Login</value>
+  </data>
 </root>

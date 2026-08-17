@@ -2,7 +2,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <main aria-labelledby="title">
-        <h2 id="title"><%: Title %>.</h2>
+        <img src="<%= ResolveUrl("~/Content/Images/protekta-logo.jpeg") %>" alt="Logo Protekta" style="max-height:200px;max-width:200px;" />
         <h3>
             <asp:Literal
                 ID="EncabezadoPrincipal"
