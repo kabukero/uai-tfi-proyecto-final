@@ -11,9 +11,9 @@ namespace Web
         {
             string language = "en-US";
 
-            if (Session["Language"] != null)
+            if (Session["UsuarioIdioma"] != null)
             {
-                language = Session["Language"].ToString();
+                language = Session["UsuarioIdioma"].ToString();
             }
 
             CultureInfo culture = CultureInfo.GetCultureInfo(language);

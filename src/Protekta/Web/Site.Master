@@ -85,8 +85,8 @@
                         runat="server"
                         AutoPostBack="true"
                         OnSelectedIndexChanged="ddlLanguage_SelectedIndexChanged">
-                        <asp:ListItem Text="English" Value="en-US" />
-                        <asp:ListItem Text="Español" Value="es-AR" />
+<%--                        <asp:ListItem Text="English" Value="en-US" />
+                        <asp:ListItem Text="Español" Value="es-AR" />--%>
                     </asp:DropDownList>
                 </div>
             </div>
