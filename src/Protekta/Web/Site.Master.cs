@@ -43,7 +43,7 @@ namespace Web
             ddlLanguage.DataTextField = "Nombre";
             ddlLanguage.DataValueField = "Codigo";
             ddlLanguage.DataBind();
-            ddlLanguage.SelectedValue = usuarioIdioma;
+            ddlLanguage.SelectedValue = Session["UsuarioIdioma"] == null ? usuarioIdioma : Session["UsuarioIdioma"].ToString();
         }
     }
 }

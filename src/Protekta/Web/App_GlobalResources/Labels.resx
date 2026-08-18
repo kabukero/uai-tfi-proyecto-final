@@ -303,4 +303,13 @@ Nuestro Servicio de Higiene y Seguridad esta pensado para aquellos que requieran
   <data name="Master.TextoLinkLogin" xml:space="preserve">
     <value>Iniciar Sesión</value>
   </data>
+  <data name="Login.ErrorMensajeValidacionEmail" xml:space="preserve">
+    <value>El campo de correo electrónico es obligatorio.</value>
+  </data>
+  <data name="Login.ErrorMensajeValidacionPassword" xml:space="preserve">
+    <value>El campo de contraseña es obligatorio.</value>
+  </data>
+  <data name="Login.BotonLoginTexto" xml:space="preserve">
+    <value>Iniciar Sesion</value>
+  </data>
 </root>

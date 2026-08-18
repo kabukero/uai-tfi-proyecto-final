@@ -540,11 +540,38 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Iniciar Sesion.
+        /// </summary>
+        internal static string Login_BotonLoginTexto {
+            get {
+                return ResourceManager.GetString("Login.BotonLoginTexto", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Utilice una cuenta local para iniciar sesión..
         /// </summary>
         internal static string Login_Encabezado {
             get {
                 return ResourceManager.GetString("Login.Encabezado", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to El campo de correo electrónico es obligatorio..
+        /// </summary>
+        internal static string Login_ErrorMensajeValidacionEmail {
+            get {
+                return ResourceManager.GetString("Login.ErrorMensajeValidacionEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to El campo de contraseña es obligatorio..
+        /// </summary>
+        internal static string Login_ErrorMensajeValidacionPassword {
+            get {
+                return ResourceManager.GetString("Login.ErrorMensajeValidacionPassword", resourceCulture);
             }
         }
         

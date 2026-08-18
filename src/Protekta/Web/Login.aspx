@@ -23,9 +23,7 @@
                         <div class="col-md-10">
                             <asp:TextBox runat="server" ID="Email" CssClass="form-control" TextMode="Email" />
                             <asp:RequiredFieldValidator runat="server" ControlToValidate="Email" CssClass="text-danger" 
-                                ErrorMessage="El campo de correo electrónico es obligatorio." ValidationGroup="Login" />
-                            <asp:RequiredFieldValidator runat="server" ControlToValidate="Email" CssClass="text-danger" 
-                                ErrorMessage="El campo de correo electrónico es obligatorio." ValidationGroup="ForgotPassword" />
+                                ErrorMessage="<%$ Resources:Labels, Login.ErrorMensajeValidacionEmail %>" ValidationGroup="Login" />
                         </div>
                     </div>
                     <div class="form-group">
@@ -33,17 +31,25 @@
                         <div class="col-md-10">
                             <asp:TextBox runat="server" ID="Password" TextMode="Password" CssClass="form-control" />
                             <asp:RequiredFieldValidator runat="server" ControlToValidate="Password" CssClass="text-danger" 
-                                ErrorMessage="El campo de contraseña es obligatorio." ValidationGroup="Login" />
+                                ErrorMessage="<%$ Resources:Labels, Login.ErrorMensajeValidacionPassword %>" ValidationGroup="Login" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <asp:Button runat="server" OnClick="LogIn" Text="<%$ Resources:Labels, Login.BotonLoginTexto %>" CssClass="btn btn-primary btn-md" ValidationGroup="Login" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <br />
+                            <asp:HyperLink
+                                ID="HyperLink1"
+                                runat="server"
+                                NavigateUrl="~/Registro.aspx"
+                                Text="<%$ Resources:Labels, Login.TextoRegistrase %>" />
                         </div>
                     </div>
                 </div>
-                <p>
-                    <asp:HyperLink
-                        ID="HyperLink1"
-                        runat="server"
-                        NavigateUrl="~/Registro.aspx"
-                        Text="<%$ Resources:Labels, Login.TextoRegistrase %>" />
-                </p>
             </section>
         </div>
     </div>
