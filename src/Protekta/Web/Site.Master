@@ -55,7 +55,8 @@
                                 NavigateUrl="~/"
                                 Text="<%$ Resources:Labels, Master.TextoLinkHome %>" />
                         </li>
-                    <% if (Session["UsuarioLogueado"] == null)
+                    <%
+                       if (Session["UsuarioLogueado"] == null)
                        {
                     %>
                         <li class="nav-item">
