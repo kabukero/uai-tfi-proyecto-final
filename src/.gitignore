@@ -355,3 +355,13 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+* text=auto
+*.cs      text eol=lf
+*.aspx    text eol=lf
+*.ascx    text eol=lf
+*.master  text eol=lf
+*.config  text eol=lf
+*.sql     text eol=lf
+*.js      text eol=lf
+*.css     text eol=lf
