@@ -2,11 +2,24 @@
 using System.Globalization;
 using System.Threading;
 using System.Web.UI;
+using BE;
 
 namespace Web
 {
     public class BasePage : Page
     {
+        public Usuario UsuarioLogueado
+        {
+            get
+            {
+                return Session["UsuarioLogueado"] != null ? (Usuario)Session["UsuarioLogueado"] : null;
+            }
+            set
+            {
+                Session["UsuarioLogueado"] = value;
+            }
+        }
+
         protected override void InitializeCulture()
         {
             string language = "en-US";

@@ -45,6 +45,7 @@
     <Compile Include="IdiomaMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqllHelper.cs" />
+    <Compile Include="UsuarioMapper.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BE\BE.csproj">

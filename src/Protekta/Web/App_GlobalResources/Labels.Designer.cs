@@ -558,6 +558,33 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to La password es incorrecta.
+        /// </summary>
+        internal static string Login_ErrorMensajePasswordIncorrecta {
+            get {
+                return ResourceManager.GetString("Login.ErrorMensajePasswordIncorrecta", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to El usuario esta bloqueado.
+        /// </summary>
+        internal static string Login_ErrorMensajeUsuarioBloqueado {
+            get {
+                return ResourceManager.GetString("Login.ErrorMensajeUsuarioBloqueado", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to El usuario no existe en el sistema..
+        /// </summary>
+        internal static string Login_ErrorMensajeUsuarioNoExiste {
+            get {
+                return ResourceManager.GetString("Login.ErrorMensajeUsuarioNoExiste", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to El campo de correo electrónico es obligatorio..
         /// </summary>
         internal static string Login_ErrorMensajeValidacionEmail {
@@ -635,6 +662,15 @@ namespace Resources {
         internal static string Master_TextoLinkLogin {
             get {
                 return ResourceManager.GetString("Master.TextoLinkLogin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Salir.
+        /// </summary>
+        internal static string Master_TextoLogout {
+            get {
+                return ResourceManager.GetString("Master.TextoLogout", resourceCulture);
             }
         }
     }

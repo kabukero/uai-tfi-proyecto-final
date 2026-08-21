@@ -25,64 +25,49 @@ namespace DAL
         private static DataTable Obtener(string query, SqlParameter[] parameters, string connStringKey)
         {
             string connString = ConfigurationManager.ConnectionStrings[connStringKey].ConnectionString;
-            try
+            SqlCommand cmd = new SqlCommand
             {
-                SqlCommand cmd = new SqlCommand
+                Connection = new SqlConnection
                 {
-                    Connection = new SqlConnection
-                    {
-                        ConnectionString = connString
-                    },
-                    CommandText = query,
-                    CommandType = CommandType.Text,
-                };
-                if (parameters != null && parameters.Count() > 0)
-                {
-                    cmd.Parameters.AddRange(parameters);
-                }
-
-                DataSet ds = new DataSet();
-                cmd.Connection.Open();
-                using (SqlDataAdapter dataAdapter = new SqlDataAdapter())
-                {
-                    dataAdapter.SelectCommand = cmd;
-                    dataAdapter.Fill(ds);
-                }
-                cmd.Connection.Close();
-
-                return ds.Tables[0];
-            }
-            catch (Exception ex)
+                    ConnectionString = connString
+                },
+                CommandText = query,
+                CommandType = CommandType.Text,
+            };
+            if (parameters != null && parameters.Count() > 0)
             {
-                //Log.Log.Grabar(ex);
-                return null;
+                cmd.Parameters.AddRange(parameters);
             }
+
+            DataSet ds = new DataSet();
+            cmd.Connection.Open();
+            using (SqlDataAdapter dataAdapter = new SqlDataAdapter())
+            {
+                dataAdapter.SelectCommand = cmd;
+                dataAdapter.Fill(ds);
+            }
+            cmd.Connection.Close();
+
+            return ds.Tables[0];
         }
 
         public static T ObtenerValor<T>(string query, SqlParameter[] parameters)
         {
             string connString = ConfigurationManager.ConnectionStrings[CONN_STRING_PRINCIPAL_KEY].ConnectionString;
-            try
+
+            using (SqlConnection connection = new SqlConnection(connString))
+            using (SqlCommand command = new SqlCommand(query, connection))
             {
-                using (SqlConnection connection = new SqlConnection(connString))
-                using (SqlCommand command = new SqlCommand(query, connection))
+                command.CommandType = CommandType.Text;
+                if (parameters != null)
                 {
-                    command.CommandType = CommandType.Text;
-                    if (parameters != null)
-                    {
-                        command.Parameters.AddRange(parameters);
-                    }
-                    command.Connection.Open();
-                    object value = command.ExecuteScalar();
-                    T valor = value is DBNull || value == null ? default : (T)Convert.ChangeType(value, typeof(T));
-                    command.Connection.Close();
-                    return valor;
+                    command.Parameters.AddRange(parameters);
                 }
-            }
-            catch (Exception ex)
-            {
-                //Log.Log.Grabar(ex);
-                throw ex;
+                command.Connection.Open();
+                object value = command.ExecuteScalar();
+                T valor = value is DBNull || value == null ? default : (T)Convert.ChangeType(value, typeof(T));
+                command.Connection.Close();
+                return valor;
             }
         }
 
@@ -99,22 +84,15 @@ namespace DAL
         private static void Ejecutar(string query, SqlParameter[] parameters, string connStringKey)
         {
             string connString = ConfigurationManager.ConnectionStrings[connStringKey].ConnectionString;
-            try
+
+            using (SqlConnection connection = new SqlConnection(connString))
+            using (SqlCommand command = new SqlCommand(query, connection))
             {
-                using (SqlConnection connection = new SqlConnection(connString))
-                using (SqlCommand command = new SqlCommand(query, connection))
-                {
-                    command.CommandType = CommandType.Text;
-                    command.Parameters.AddRange(parameters);
-                    command.Connection.Open();
-                    command.ExecuteNonQuery();
-                    command.Connection.Close();
-                }
-            }
-            catch (Exception ex)
-            {
-                //Log.Log.Grabar(ex);
-                throw ex;
+                command.CommandType = CommandType.Text;
+                command.Parameters.AddRange(parameters);
+                command.Connection.Open();
+                command.ExecuteNonQuery();
+                command.Connection.Close();
             }
         }
 
@@ -131,23 +109,15 @@ namespace DAL
         private static int Insertar(string query, SqlParameter[] parameters, string connStringKey)
         {
             string connString = ConfigurationManager.ConnectionStrings[connStringKey].ConnectionString;
-            try
+            using (SqlConnection connection = new SqlConnection(connString))
+            using (SqlCommand command = new SqlCommand(query, connection))
             {
-                using (SqlConnection connection = new SqlConnection(connString))
-                using (SqlCommand command = new SqlCommand(query, connection))
-                {
-                    command.CommandType = CommandType.Text;
-                    command.Parameters.AddRange(parameters);
-                    command.Connection.Open();
-                    int idInsertado = (int)command.ExecuteScalar();
-                    command.Connection.Close();
-                    return idInsertado;
-                }
-            }
-            catch (Exception ex)
-            {
-                //Log.Log.Grabar(ex);
-                return 0;
+                command.CommandType = CommandType.Text;
+                command.Parameters.AddRange(parameters);
+                command.Connection.Open();
+                int idInsertado = (int)command.ExecuteScalar();
+                command.Connection.Close();
+                return idInsertado;
             }
         }
     }

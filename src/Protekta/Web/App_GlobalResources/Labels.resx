@@ -312,4 +312,16 @@ Nuestro Servicio de Higiene y Seguridad esta pensado para aquellos que requieran
   <data name="Login.BotonLoginTexto" xml:space="preserve">
     <value>Iniciar Sesion</value>
   </data>
+  <data name="Login.ErrorMensajeUsuarioNoExiste" xml:space="preserve">
+    <value>El usuario no existe en el sistema.</value>
+  </data>
+  <data name="Login.ErrorMensajeUsuarioBloqueado" xml:space="preserve">
+    <value>El usuario esta bloqueado</value>
+  </data>
+  <data name="Login.ErrorMensajePasswordIncorrecta" xml:space="preserve">
+    <value>La password es incorrecta</value>
+  </data>
+  <data name="Master.TextoLogout" xml:space="preserve">
+    <value>Salir</value>
+  </data>
 </root>

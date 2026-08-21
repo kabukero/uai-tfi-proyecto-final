@@ -289,7 +289,7 @@ Our Occupational Health and Safety Service is designed for organizations that re
     <value>Contact</value>
   </data>
   <data name="Login.Encabezado" xml:space="preserve">
-    <value>Use credentials your enter the system</value>
+    <value>Use your credentials to enter the system</value>
   </data>
   <data name="Login.TextoEmail" xml:space="preserve">
     <value>E-mail</value>
@@ -311,5 +311,17 @@ Our Occupational Health and Safety Service is designed for organizations that re
   </data>
   <data name="Login.BotonLoginTexto" xml:space="preserve">
     <value>Sign In</value>
+  </data>
+  <data name="Login.ErrorMensajeUsuarioNoExiste" xml:space="preserve">
+    <value>The user does not exists in the system</value>
+  </data>
+  <data name="Login.ErrorMensajeUsuarioBloqueado" xml:space="preserve">
+    <value>The user is blocked</value>
+  </data>
+  <data name="Login.ErrorMensajePasswordIncorrecta" xml:space="preserve">
+    <value>The password is wrong</value>
+  </data>
+  <data name="Master.TextoLogout" xml:space="preserve">
+    <value>Log Out</value>
   </data>
 </root>
