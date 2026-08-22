@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using BE;
 
 namespace Web
 {
@@ -13,6 +14,9 @@ namespace Web
         {
             // Resetear variable de sesion usuario logueado
             UsuarioLogueado = null;
+
+            // Configurar idioma predeterminado nuevamente
+            Session["UsuarioIdioma"] = SistemaConfiguracion.IdiomaPredeterminado;
 
             // Redireccionar a la pagina home
             Response.Redirect("~/Default.aspx");

@@ -45,6 +45,7 @@
     <Compile Include="LoginEstado.cs" />
     <Compile Include="LoginRespuesta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SistemaConfiguracion.cs" />
     <Compile Include="Usuario.cs" />
     <Compile Include="VerificarIntegridadRespuesta.cs" />
   </ItemGroup>

@@ -549,7 +549,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Utilice una cuenta local para iniciar sesión..
+        ///   Looks up a localized string similar to Ingrese sus credenciales para iniciar sesión..
         /// </summary>
         internal static string Login_Encabezado {
             get {

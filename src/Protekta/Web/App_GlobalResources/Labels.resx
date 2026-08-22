@@ -289,7 +289,7 @@ Nuestro Servicio de Higiene y Seguridad esta pensado para aquellos que requieran
     <value>Contacto</value>
   </data>
   <data name="Login.Encabezado" xml:space="preserve">
-    <value>Utilice una cuenta local para iniciar sesión.</value>
+    <value>Ingrese sus credenciales para iniciar sesión.</value>
   </data>
   <data name="Login.TextoEmail" xml:space="preserve">
     <value>Correo electrónico</value>

@@ -12,7 +12,7 @@ namespace Web
         {
             get
             {
-                return Session["UsuarioLogueado"] != null ? (Usuario)Session["UsuarioLogueado"] : null;
+                return Session["UsuarioLogueado"] == null ? null : (Usuario)Session["UsuarioLogueado"];
             }
             set
             {
@@ -22,18 +22,9 @@ namespace Web
 
         protected override void InitializeCulture()
         {
-            string language = "en-US";
-
-            if (Session["UsuarioIdioma"] != null)
-            {
-                language = Session["UsuarioIdioma"].ToString();
-            }
-
-            CultureInfo culture = CultureInfo.GetCultureInfo(language);
-
+            CultureInfo culture = CultureInfo.GetCultureInfo(Session["UsuarioIdioma"] == null ? SistemaConfiguracion.IdiomaPredeterminado : Session["UsuarioIdioma"].ToString());
             Thread.CurrentThread.CurrentCulture = culture;
             Thread.CurrentThread.CurrentUICulture = culture;
-
             base.InitializeCulture();
         }
     }

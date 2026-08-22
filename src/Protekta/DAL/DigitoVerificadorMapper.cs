@@ -106,7 +106,7 @@ namespace DAL
                 if (dvhBD != dvhCalculado)
                 {
                     respuesta.Mensajes.Add(string.Format("El usuario con el ID {0} fue modificado externamente.", usuario.Id));
-                    respuesta.HayErrores = false;
+                    respuesta.HayErrores = true;
                 }
                 sbDvhs.Append(dvhBD.ToString());
             }
@@ -119,7 +119,7 @@ namespace DAL
             if (dvvCalculado != dvvBD)
             {
                 respuesta.Mensajes.Add("Un registro de la tabla Usuario fue eliminado externamente.");
-                respuesta.HayErrores = false;
+                respuesta.HayErrores = true;
             }
             #endregion
 

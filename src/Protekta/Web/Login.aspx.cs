@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 using BE;
 using BLL;
 using Resources;
-using WebGrease.Activities;
 
 namespace Web
 {
@@ -65,8 +58,11 @@ namespace Web
                 }
 
                 // guardo usuario logueado en property UsuarioLogueado
-                // encapsula variable de sesion de usuario login
+                // (encapsula variable de sesion de usuario login)
                 UsuarioLogueado = respuesta.UsuarioLogin;
+
+                // configurar idioma de preferencia del usuario logueado
+                Session["UsuarioIdioma"] = UsuarioLogueado.Idioma.Codigo;
 
                 // login process OK
                 IrUrlHome();
@@ -76,8 +72,6 @@ namespace Web
                 lblLoginError.Text = ex.Message;
                 pnlLoginError.Visible = true;
             }
-
-            
         }
 
         private void IrUrlHome()

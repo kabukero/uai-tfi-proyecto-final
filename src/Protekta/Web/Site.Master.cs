@@ -13,17 +13,18 @@ namespace Web
     {
         private IdiomaManager manager = new IdiomaManager();
         private IntegridadDatosManager integridadDatosManager = new IntegridadDatosManager();
-        private string usuarioIdioma = "en-US";
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
             if (!IsPostBack)
             {
                 CargarIdiomas();
             }
 
+            // mostrar el nombre y apellido del usuario logueado
             MostrarUsuarioLogueado();
+
+            // recalcular DV
             //integridadDatosManager.ActualizaDV();
         }
 
@@ -35,15 +36,7 @@ namespace Web
 
         private void MostrarUsuarioLogueado()
         {
-            HyperLink6.Text = Session["UsuarioLogueado"] == null ? "" : $"{((Usuario)Session["UsuarioLogueado"]).Nombre} {((Usuario)Session["UsuarioLogueado"]).Apellido}";
-        }
-
-        private void SetIdioma()
-        {
-            if (Session["UsuarioIdioma"] != null)
-            {
-                usuarioIdioma = Session["UsuarioIdioma"].ToString();
-            }
+            HyperLink7.Text = Session["UsuarioLogueado"] == null ? "" : $"{((Usuario)Session["UsuarioLogueado"]).Nombre} {((Usuario)Session["UsuarioLogueado"]).Apellido}";
         }
 
         private void CargarIdiomas()
@@ -53,7 +46,7 @@ namespace Web
             ddlLanguage.DataTextField = "Nombre";
             ddlLanguage.DataValueField = "Codigo";
             ddlLanguage.DataBind();
-            ddlLanguage.SelectedValue = Session["UsuarioIdioma"] == null ? usuarioIdioma : Session["UsuarioIdioma"].ToString();
+            ddlLanguage.SelectedValue = Session["UsuarioIdioma"] == null ? SistemaConfiguracion.IdiomaPredeterminado : Session["UsuarioIdioma"].ToString();
         }
     }
 }
