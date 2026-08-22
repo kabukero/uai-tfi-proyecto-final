@@ -558,6 +558,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Error de integridad de datos.
+        /// </summary>
+        internal static string Login_ErrorMensajeIntegridadDatos {
+            get {
+                return ResourceManager.GetString("Login.ErrorMensajeIntegridadDatos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to La password es incorrecta.
         /// </summary>
         internal static string Login_ErrorMensajePasswordIncorrecta {

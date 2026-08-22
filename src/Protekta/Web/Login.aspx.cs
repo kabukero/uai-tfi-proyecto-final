@@ -15,6 +15,8 @@ namespace Web
     public partial class Login : BasePage
     {
         private UsuarioManager usuarioManager = new UsuarioManager();
+        private IntegridadDatosManager integridadDatosManager = new IntegridadDatosManager();
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -30,6 +32,15 @@ namespace Web
 
             try
             {
+                // verificar integridad datos
+                VerificarIntegridadRespuesta integridadRespuesta = integridadDatosManager.VerificarIntegridad();
+                if(integridadRespuesta == null || integridadRespuesta.HayErrores)
+                {
+                    lblLoginError.Text = Labels.Login_ErrorMensajeIntegridadDatos;
+                    pnlLoginError.Visible = true;
+                    return;
+                }
+
                 // obtener usuario por e-mail
                 LoginRespuesta respuesta = usuarioManager.Login(TxtEmail.Text, TxtPassword.Text);
 

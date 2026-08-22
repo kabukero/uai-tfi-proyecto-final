@@ -98,14 +98,37 @@
                                 Text="<%$ Resources:Labels, Master.TextoLinkContacto %>" />
                         </li>
                     </ul>
-                    <asp:DropDownList
-                        ID="ddlLanguage"
-                        runat="server"
-                        AutoPostBack="true"
-                        OnSelectedIndexChanged="ddlLanguage_SelectedIndexChanged">
-<%--                        <asp:ListItem Text="English" Value="en-US" />
-                        <asp:ListItem Text="Español" Value="es-AR" />--%>
-                    </asp:DropDownList>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-item">
+                            <asp:DropDownList
+                                ID="ddlLanguage"
+                                runat="server"
+                                AutoPostBack="true"
+                                CssClass="form-control"
+                                OnSelectedIndexChanged="ddlLanguage_SelectedIndexChanged">
+                                <%--                        <asp:ListItem Text="English" Value="en-US" />
+                                <asp:ListItem Text="Español" Value="es-AR" />--%>
+                            </asp:DropDownList>
+                        </li>
+                        <%
+                            if (Session["UsuarioLogueado"] != null)
+                            {
+                        %>
+                                <li class="nav-item">
+                                    <asp:HyperLink
+                                    ID="HyperLink6"
+                                    runat="server"
+                                    CssClass="nav-link"
+                                    NavigateUrl="#"
+                                    Text="" />
+                                </li>
+                                    <%--<li class="nav-item"><%: ((BE.Usuario)Session["UsuarioLogueado"]).Nombre %> <%: ((BE.Usuario)Session["UsuarioLogueado"]).Apellido %></li>--%>
+<%--                                <li><a runat="server" href="~/ListadoCarrito.aspx" title="Carrito">Carrito</a></li>
+                                <li><a runat="server" href="~/Account/Logout" title="Cerrar sesión">Cerrar sesión</a></li>--%>
+                        <%
+                            }
+                        %>
+                    </ul>
                 </div>
             </div>
         </nav>

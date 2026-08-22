@@ -324,4 +324,7 @@ Nuestro Servicio de Higiene y Seguridad esta pensado para aquellos que requieran
   <data name="Master.TextoLogout" xml:space="preserve">
     <value>Salir</value>
   </data>
+  <data name="Login.ErrorMensajeIntegridadDatos" xml:space="preserve">
+    <value>Error de integridad de datos</value>
+  </data>
 </root>

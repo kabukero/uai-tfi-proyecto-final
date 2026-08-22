@@ -14,5 +14,7 @@ namespace BE
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public bool Activo { get; set; }
+        public int IdIdioma { get; set; }
+        public string DVH { get; set; }
     }
 }

@@ -324,4 +324,7 @@ Our Occupational Health and Safety Service is designed for organizations that re
   <data name="Master.TextoLogout" xml:space="preserve">
     <value>Log Out</value>
   </data>
+  <data name="Login.ErrorMensajeIntegridadDatos" xml:space="preserve">
+    <value>The operation failed due to a data integrity violation.</value>
+  </data>
 </root>

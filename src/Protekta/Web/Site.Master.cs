@@ -12,20 +12,30 @@ namespace Web
     public partial class SiteMaster : MasterPage
     {
         private IdiomaManager manager = new IdiomaManager();
+        private IntegridadDatosManager integridadDatosManager = new IntegridadDatosManager();
         private string usuarioIdioma = "en-US";
 
         protected void Page_Load(object sender, EventArgs e)
         {
+
             if (!IsPostBack)
             {
                 CargarIdiomas();
             }
+
+            MostrarUsuarioLogueado();
+            //integridadDatosManager.ActualizaDV();
         }
 
         protected void ddlLanguage_SelectedIndexChanged(object sender, EventArgs e)
         {
             Session["UsuarioIdioma"] = ddlLanguage.SelectedValue;
             Response.Redirect(Request.RawUrl);
+        }
+
+        private void MostrarUsuarioLogueado()
+        {
+            HyperLink6.Text = Session["UsuarioLogueado"] == null ? "" : $"{((Usuario)Session["UsuarioLogueado"]).Nombre} {((Usuario)Session["UsuarioLogueado"]).Apellido}";
         }
 
         private void SetIdioma()

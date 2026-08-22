@@ -13,7 +13,7 @@ namespace DAL
     {
         public Usuario Obtener(string email)
         {
-            string query = "SELECT Id,Email,Nombre,Apellido,Password,Activo FROM Usuario " +
+            string query = "SELECT Id,Email,Nombre,Apellido,Password,Activo,DVH,IdIdioma FROM Usuario " +
             "WHERE Email=@email";
 
             SqlParameter[] parameters = new SqlParameter[]
@@ -34,7 +34,9 @@ namespace DAL
                 Nombre = table.Rows[0]["Nombre"].ToString(),
                 Apellido = table.Rows[0]["Apellido"].ToString(),
                 Password = table.Rows[0]["Password"].ToString(),
-                Activo = bool.Parse(table.Rows[0]["Activo"].ToString())
+                Activo = bool.Parse(table.Rows[0]["Activo"].ToString()),
+                DVH = table.Rows[0]["DVH"].ToString(),
+                IdIdioma = int.Parse(table.Rows[0]["IdIdioma"].ToString())
             };
 
             return usuario;
