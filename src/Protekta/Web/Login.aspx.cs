@@ -9,6 +9,7 @@ namespace Web
     {
         private UsuarioManager usuarioManager = new UsuarioManager();
         private IntegridadDatosManager integridadDatosManager = new IntegridadDatosManager();
+        private BitacoraManager bitacoraManager = new BitacoraManager();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -63,6 +64,9 @@ namespace Web
 
                 // configurar idioma de preferencia del usuario logueado
                 Session["UsuarioIdioma"] = UsuarioLogueado.Idioma.Codigo;
+
+                // registrar evento login en la bitacora
+                bitacoraManager.Alta(new BE.Bitacora() { Descripcion = Labels.Bitacora_MensajeLogin, FechaEvento = DateTime.Now, Usuario = UsuarioLogueado, BitacoraTipoEvento = new BitacoraTipoEvento() { Id = (int)BitacoraTipoEventoEnum.Informacion } });
 
                 // login process OK
                 IrUrlHome();

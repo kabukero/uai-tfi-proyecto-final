@@ -327,4 +327,13 @@ Nuestro Servicio de Higiene y Seguridad esta pensado para aquellos que requieran
   <data name="Login.ErrorMensajeIntegridadDatos" xml:space="preserve">
     <value>Error de integridad de datos</value>
   </data>
+  <data name="Bitacora.MensajeLogin" xml:space="preserve">
+    <value>Login: usuario inicio sesion</value>
+  </data>
+  <data name="Bitacora.Encabezado" xml:space="preserve">
+    <value>Listado de eventos del sistema</value>
+  </data>
+  <data name="Master.Bitacora" xml:space="preserve">
+    <value>Bitacora</value>
+  </data>
 </root>

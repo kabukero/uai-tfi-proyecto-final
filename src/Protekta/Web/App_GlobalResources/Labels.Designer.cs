@@ -378,6 +378,24 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Listado de eventos del sistema.
+        /// </summary>
+        internal static string Bitacora_Encabezado {
+            get {
+                return ResourceManager.GetString("Bitacora.Encabezado", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Login: usuario inicio sesion.
+        /// </summary>
+        internal static string Bitacora_MensajeLogin {
+            get {
+                return ResourceManager.GetString("Bitacora.MensajeLogin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Argentina, CABA, Av. Cabildo 123.
         /// </summary>
         internal static string Contacto_Direccion {
@@ -635,6 +653,15 @@ namespace Resources {
         internal static string Login_TextoRegistrase {
             get {
                 return ResourceManager.GetString("Login.TextoRegistrase", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bitacora.
+        /// </summary>
+        internal static string Master_Bitacora {
+            get {
+                return ResourceManager.GetString("Master.Bitacora", resourceCulture);
             }
         }
         

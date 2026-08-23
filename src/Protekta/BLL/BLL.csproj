@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BitacoraManager.cs" />
     <Compile Include="EncriptadorManager.cs" />
     <Compile Include="IdiomaManager.cs" />
     <Compile Include="IntegridadDatosManager.cs" />

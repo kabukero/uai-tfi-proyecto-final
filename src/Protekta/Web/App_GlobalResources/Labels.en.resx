@@ -327,4 +327,13 @@ Our Occupational Health and Safety Service is designed for organizations that re
   <data name="Login.ErrorMensajeIntegridadDatos" xml:space="preserve">
     <value>The operation failed due to a data integrity violation.</value>
   </data>
+  <data name="Bitacora.MensajeLogin" xml:space="preserve">
+    <value>Login: user sign in</value>
+  </data>
+  <data name="Bitacora.Encabezado" xml:space="preserve">
+    <value>System Log list</value>
+  </data>
+  <data name="Master.Bitacora" xml:space="preserve">
+    <value>System Log</value>
+  </data>
 </root>

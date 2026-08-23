@@ -41,6 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bitacora.cs" />
+    <Compile Include="BitacoraTipoEvento.cs" />
+    <Compile Include="BitacoraTipoEventoEnum.cs" />
     <Compile Include="Idioma.cs" />
     <Compile Include="LoginEstado.cs" />
     <Compile Include="LoginRespuesta.cs" />

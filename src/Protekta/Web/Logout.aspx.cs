@@ -15,7 +15,7 @@ namespace Web
             // Resetear variable de sesion usuario logueado
             UsuarioLogueado = null;
 
-            // Configurar idioma predeterminado nuevamente
+            // Reestablecer idioma predeterminado nuevamente
             Session["UsuarioIdioma"] = SistemaConfiguracion.IdiomaPredeterminado;
 
             // Redireccionar a la pagina home

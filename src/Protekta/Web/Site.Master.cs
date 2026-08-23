@@ -36,7 +36,7 @@ namespace Web
 
         private void MostrarUsuarioLogueado()
         {
-            HyperLink7.Text = Session["UsuarioLogueado"] == null ? "" : $"{((Usuario)Session["UsuarioLogueado"]).Nombre} {((Usuario)Session["UsuarioLogueado"]).Apellido}";
+            HyperLink7.Text = Session["UsuarioLogueado"] == null ? "" : ((Usuario)Session["UsuarioLogueado"]).ToString();
         }
 
         private void CargarIdiomas()

@@ -17,5 +17,10 @@ namespace BE
         public int IdIdioma { get; set; }
         public string DVH { get; set; }
         public Idioma Idioma { get; set; }
+
+        public override string ToString()
+        {
+            return $"{Nombre} {Apellido}";
+        }
     }
 }
