@@ -30,6 +30,7 @@ namespace Web
                 VerificarIntegridadRespuesta integridadRespuesta = integridadDatosManager.VerificarIntegridad();
                 if(integridadRespuesta == null || integridadRespuesta.HayErrores)
                 {
+                    // mostrar mensaje de error
                     lblLoginError.Text = Labels.Login_ErrorMensajeIntegridadDatos;
                     pnlLoginError.Visible = true;
                     return;
@@ -41,20 +42,40 @@ namespace Web
                 // validar usuario login
                 if (respuesta.LoginEstado == LoginEstado.NoExisteUsuario)
                 {
+                    // mostrar mensaje de error
                     lblLoginError.Text = Labels.Login_ErrorMensajeUsuarioNoExiste;
                     pnlLoginError.Visible = true;
                     return;
                 }
                 else if (respuesta.LoginEstado == LoginEstado.UsuarioBloqueado)
                 {
+                    // mostrar mensaje de error
                     lblLoginError.Text = Labels.Login_ErrorMensajeUsuarioBloqueado;
                     pnlLoginError.Visible = true;
                     return;
                 }
                 else if (respuesta.LoginEstado == LoginEstado.PasswordIncorrecta)
                 {
+                    // mostrar mensaje de error
                     lblLoginError.Text = Labels.Login_ErrorMensajePasswordIncorrecta;
                     pnlLoginError.Visible = true;
+
+                    // actualizar contador de intentos de login
+                    IncrementarIntentosLogin();
+
+                    // validar maximo intentos de login
+                    if (int.Parse(Session["CantidadIntentosLogin"].ToString()) > 3)
+                    {
+                        // mostrar mensaje de error
+                        lblLoginError.Text = Labels.Login_ErrorMensajeUsuarioBloqueado;
+                        pnlLoginError.Visible = true;
+
+                        // resetear cantidad intentos de login zero
+                        Session["CantidadIntentosLogin"] = 0;
+
+                        // bloquear usuario por e-mail
+                        usuarioManager.Bloquear(TxtEmail.Text);
+                    }
                     return;
                 }
 
@@ -64,6 +85,9 @@ namespace Web
 
                 // configurar idioma de preferencia del usuario logueado
                 Session["UsuarioIdioma"] = UsuarioLogueado.Idioma.Codigo;
+
+                // resetear cantidad intentos de login zero
+                Session["CantidadIntentosLogin"] = 0;
 
                 // registrar evento login en la bitacora
                 bitacoraManager.Alta(new BE.Bitacora() { Descripcion = Labels.Bitacora_MensajeLogin, FechaEvento = DateTime.Now, Usuario = UsuarioLogueado, BitacoraTipoEvento = new BitacoraTipoEvento() { Id = (int)BitacoraTipoEventoEnum.Informacion } });
@@ -75,6 +99,18 @@ namespace Web
             {
                 lblLoginError.Text = ex.Message;
                 pnlLoginError.Visible = true;
+            }
+        }
+
+        private void IncrementarIntentosLogin()
+        {
+            if (Session["CantidadIntentosLogin"] == null)
+            {
+                Session["CantidadIntentosLogin"] = 1;
+            }
+            else
+            {
+                Session["CantidadIntentosLogin"] = int.Parse(Session["CantidadIntentosLogin"].ToString()) + 1;
             }
         }
 

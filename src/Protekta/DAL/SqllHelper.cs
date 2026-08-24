@@ -89,7 +89,10 @@ namespace DAL
             using (SqlCommand command = new SqlCommand(query, connection))
             {
                 command.CommandType = CommandType.Text;
-                command.Parameters.AddRange(parameters);
+                if (parameters != null && parameters.Count() > 0)
+                {
+                    command.Parameters.AddRange(parameters);
+                }
                 command.Connection.Open();
                 command.ExecuteNonQuery();
                 command.Connection.Close();

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Security.Permissions;
 using System.Text;
@@ -14,6 +15,7 @@ namespace BE
         public DateTime FechaEvento { get; set; }
         public BitacoraTipoEvento BitacoraTipoEvento { get; set; }
         public Usuario Usuario { get; set; }
+        public string DVH { get; set; }
 
         public string UsuarioLogin
         {

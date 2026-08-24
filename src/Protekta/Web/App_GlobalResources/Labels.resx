@@ -336,4 +336,7 @@ Nuestro Servicio de Higiene y Seguridad esta pensado para aquellos que requieran
   <data name="Master.Bitacora" xml:space="preserve">
     <value>Bitacora</value>
   </data>
+  <data name="Login.ErrorMensajeAlcanzoIntentosLogin" xml:space="preserve">
+    <value>El usuario fue bloqueado por superar la cantidad  de intentos de login</value>
+  </data>
 </root>

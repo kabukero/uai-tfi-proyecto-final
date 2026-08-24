@@ -10,7 +10,7 @@ namespace BLL
 {
     public class BitacoraManager
     {
-        private BitacoraMapper mapper = new BitacoraMapper();
+        private BitacoraMapper mapper = BitacoraMapper.Instance;
 
         public void Alta(Bitacora bitacora)
         {

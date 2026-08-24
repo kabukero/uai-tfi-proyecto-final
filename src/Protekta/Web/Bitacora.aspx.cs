@@ -8,11 +8,13 @@ using BLL;
 
 namespace Web
 {
-    public partial class Bitacora : System.Web.UI.Page
+    public partial class Bitacora : BasePage
     {
         private BitacoraManager manager = new BitacoraManager();
         protected void Page_Load(object sender, EventArgs e)
         {
+            ValidarExisteSesionLogin();
+
             if(!IsPostBack)
             {
                 CargarBitacoraEventos();

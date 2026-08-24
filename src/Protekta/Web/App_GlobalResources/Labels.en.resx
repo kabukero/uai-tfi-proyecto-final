@@ -336,4 +336,7 @@ Our Occupational Health and Safety Service is designed for organizations that re
   <data name="Master.Bitacora" xml:space="preserve">
     <value>System Log</value>
   </data>
+  <data name="Login.ErrorMensajeAlcanzoIntentosLogin" xml:space="preserve">
+    <value>The user has been blocked after exceeding the allowed number of login attempts</value>
+  </data>
 </root>

@@ -13,7 +13,25 @@ namespace DAL
 {
     public class BitacoraMapper
     {
-        private UsuarioMapper usuarioMapper = new UsuarioMapper();
+        private static BitacoraMapper _instance;
+
+        private BitacoraMapper()
+        {
+
+        }
+
+        public static BitacoraMapper Instance
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    _instance = new BitacoraMapper();
+                }
+
+                return _instance;
+            }
+        }
         public void Alta(Bitacora bitacora)
         {
             string query = "INSERT INTO Bitacora (Descripcion,FechaEvento,UsuarioId,BitacoraTipoEventoId) OUTPUT INSERTED.Id " +
@@ -49,7 +67,7 @@ namespace DAL
                     Id = int.Parse(row["Id"].ToString()),
                     Descripcion = row["Descripcion"].ToString(),
                     FechaEvento = DateTime.Parse(row["FechaEvento"].ToString()),
-                    Usuario = usuarioMapper.Obtener(int.Parse(row["UsuarioId"].ToString())),
+                    Usuario = UsuarioMapper.Instance.Obtener(int.Parse(row["UsuarioId"].ToString())),
                     BitacoraTipoEvento = new BitacoraTipoEvento() { Id = int.Parse(row["Id"].ToString()), Nombre = row["Nombre"].ToString() }
                 });
             }

@@ -11,6 +11,7 @@
         <asp:GridView ID="GridViewBitacora" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Width="100%"
             AllowPaging="true"
             PageSize="10"
+            AutoGenerateColumns="False"
             OnPageIndexChanging="GridViewBitacora_PageIndexChanging">
             <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
             <EditRowStyle BackColor="#999999" />
@@ -23,6 +24,14 @@
             <SortedAscendingHeaderStyle BackColor="#506C8C" />
             <SortedDescendingCellStyle BackColor="#FFFDF8" />
             <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
+            <Columns>
+                <asp:BoundField DataField="Descripcion" HeaderText="Descripcion" />
+                <asp:BoundField DataField="FechaEvento" HeaderText="Fecha Evento" />
+                <asp:BoundField DataField="UsuarioLogin" HeaderText="Usuario" />
+                <asp:BoundField DataField="BitacoraTipoEvento" HeaderText="Tipo Evento" />
+                <asp:BoundField DataField="Id" HeaderText="Id" Visible="False" />
+                <asp:BoundField DataField="DVH" HeaderText="DVH" Visible="False" />
+            </Columns>
     </asp:GridView>
     </main>
 </asp:Content>

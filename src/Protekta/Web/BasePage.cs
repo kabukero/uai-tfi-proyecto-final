@@ -3,6 +3,7 @@ using System.Globalization;
 using System.Threading;
 using System.Web.UI;
 using BE;
+using BLL;
 
 namespace Web
 {
@@ -17,6 +18,14 @@ namespace Web
             set
             {
                 Session["UsuarioLogueado"] = value;
+            }
+        }
+
+        protected void ValidarExisteSesionLogin()
+        {
+            if (UsuarioLogueado == null)
+            {
+                Response.Redirect("Default.aspx");
             }
         }
 

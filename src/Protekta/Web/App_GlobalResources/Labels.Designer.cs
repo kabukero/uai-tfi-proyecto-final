@@ -576,6 +576,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to El usuario fue bloqueado por superar la cantidad  de intentos de login.
+        /// </summary>
+        internal static string Login_ErrorMensajeAlcanzoIntentosLogin {
+            get {
+                return ResourceManager.GetString("Login.ErrorMensajeAlcanzoIntentosLogin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Error de integridad de datos.
         /// </summary>
         internal static string Login_ErrorMensajeIntegridadDatos {

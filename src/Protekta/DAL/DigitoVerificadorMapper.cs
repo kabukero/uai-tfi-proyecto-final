@@ -10,9 +10,29 @@ using BE;
 
 namespace DAL
 {
-    public class DigitoVerificadorMapper
+    public sealed class DigitoVerificadorMapper
     {
         private const string DV_KEY = "Hl2NspLLkg";
+
+        private static DigitoVerificadorMapper _instance;
+
+        private DigitoVerificadorMapper()
+        {
+
+        }
+
+        public static DigitoVerificadorMapper Instance
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    _instance = new DigitoVerificadorMapper();
+                }
+
+                return _instance;
+            }
+        }
 
         public void ActualizarDV(Usuario usuario)
         {
@@ -124,6 +144,18 @@ namespace DAL
             #endregion
 
             return respuesta;
+        }
+
+        public void RecalcularActualizarDV()
+        {
+            UsuarioMapper.Instance.DesbloquearUsuarios();
+            List<Usuario> usuarios = UsuarioMapper.Instance.ObtenerTodos();
+
+            foreach(Usuario usuario in usuarios)
+            {
+                usuario.Activo = true;
+                ActualizarDV(usuario);
+            }
         }
     }
 }

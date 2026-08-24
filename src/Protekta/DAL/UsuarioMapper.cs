@@ -11,6 +11,26 @@ namespace DAL
 {
     public class UsuarioMapper
     {
+        private static UsuarioMapper _instance;
+
+        private UsuarioMapper()
+        {
+
+        }
+
+        public static UsuarioMapper Instance
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    _instance = new UsuarioMapper();
+                }
+
+                return _instance;
+            }
+        }
+
         public Usuario Obtener(string email)
         {
             string query = @"
@@ -89,6 +109,65 @@ namespace DAL
             };
 
             return usuario;
+        }
+
+        public List<Usuario> ObtenerTodos()
+        {
+            string query = @"
+                SELECT u.Id,u.Email,u.Nombre,u.Apellido,u.Password,
+                u.Activo,u.DVH,u.IdIdioma,i.Nombre AS Idioma,i.Codigo AS CodigoIdioma
+                FROM Usuario u INNER JOIN Idioma i ON i.Id=u.IdIdioma";
+
+            DataTable table = SqlHelper.Obtener(query, null);
+            if (table == null || table.Rows.Count == 0)
+            {
+                return null;
+            }
+
+            List<Usuario> usuarios = new List<Usuario>();
+            foreach (DataRow row in table.Rows)
+            {
+                usuarios.Add(new Usuario()
+                {
+                    Id = int.Parse(table.Rows[0]["Id"].ToString()),
+                    Email = table.Rows[0]["Email"].ToString(),
+                    Nombre = table.Rows[0]["Nombre"].ToString(),
+                    Apellido = table.Rows[0]["Apellido"].ToString(),
+                    Password = table.Rows[0]["Password"].ToString(),
+                    Activo = bool.Parse(table.Rows[0]["Activo"].ToString()),
+                    DVH = table.Rows[0]["DVH"].ToString(),
+                    IdIdioma = int.Parse(table.Rows[0]["IdIdioma"].ToString()),
+                    Idioma = new Idioma()
+                    {
+                        Id = int.Parse(table.Rows[0]["IdIdioma"].ToString()),
+                        Nombre = table.Rows[0]["Idioma"].ToString(),
+                        Codigo = table.Rows[0]["CodigoIdioma"].ToString(),
+                    }
+                });
+            }
+
+            return usuarios;
+        }
+
+        public void Bloquear(string email)
+        {
+            string query = "UPDATE Usuario SET Activo=0 WHERE Email=@Email";
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+                new SqlParameter("@Email", email)
+            };
+
+            SqlHelper.Ejecutar(query, parameters);
+
+            Usuario usuario = Obtener(email);
+
+            DigitoVerificadorMapper.Instance.ActualizarDV(usuario);
+        }
+
+        public void DesbloquearUsuarios()
+        {
+            string query = "UPDATE Usuario SET Activo=1";
+            SqlHelper.Ejecutar(query, null);
         }
     }
 }

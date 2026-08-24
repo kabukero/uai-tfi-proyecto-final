@@ -10,7 +10,7 @@ namespace BLL
 {
     public class UsuarioManager
     {
-        private UsuarioMapper mapper = new UsuarioMapper();
+        private UsuarioMapper mapper = UsuarioMapper.Instance;
         private EncriptadorManager encriptadorManager = new EncriptadorManager();
 
         public LoginRespuesta Login(string email, string password)
@@ -43,6 +43,11 @@ namespace BLL
             // el proceso login es ok
             loginRespuesta.LoginEstado = LoginEstado.LoginOK;
             return loginRespuesta;
+        }
+
+        public void Bloquear(string email)
+        {
+            mapper.Bloquear(email);
         }
     }
 }

@@ -10,8 +10,8 @@ namespace BLL
 {
     public class IntegridadDatosManager
     {
-        private DigitoVerificadorMapper mapper = new DigitoVerificadorMapper();
-        private UsuarioMapper usuarioMapper = new UsuarioMapper();
+        private DigitoVerificadorMapper mapper = DigitoVerificadorMapper.Instance;
+        private UsuarioMapper usuarioMapper = UsuarioMapper.Instance;
 
         public void ActualizaDV()
         {
@@ -21,6 +21,11 @@ namespace BLL
         public VerificarIntegridadRespuesta VerificarIntegridad()
         {
             return mapper.VerificarIntegridad();
+        }
+
+        public void RecalcularActualizarDV()
+        {
+            mapper.RecalcularActualizarDV();
         }
     }
 }
