@@ -339,4 +339,7 @@ Our Occupational Health and Safety Service is designed for organizations that re
   <data name="Login.ErrorMensajeAlcanzoIntentosLogin" xml:space="preserve">
     <value>The user has been blocked after exceeding the allowed number of login attempts</value>
   </data>
+  <data name="Master.TextoCarrito" xml:space="preserve">
+    <value>Shoppint Cart</value>
+  </data>
 </root>

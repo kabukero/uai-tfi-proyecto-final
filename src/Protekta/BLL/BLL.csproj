@@ -45,6 +45,7 @@
     <Compile Include="EncriptadorManager.cs" />
     <Compile Include="IdiomaManager.cs" />
     <Compile Include="IntegridadDatosManager.cs" />
+    <Compile Include="PermisoManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UsuarioManager.cs" />
   </ItemGroup>

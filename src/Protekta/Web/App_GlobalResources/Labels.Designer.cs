@@ -675,6 +675,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Carrito Compras.
+        /// </summary>
+        internal static string Master_TextoCarrito {
+            get {
+                return ResourceManager.GetString("Master.TextoCarrito", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Acerca de.
         /// </summary>
         internal static string Master_TextoLinkAcercaDe {

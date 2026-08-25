@@ -49,5 +49,31 @@ namespace BLL
         {
             mapper.Bloquear(email);
         }
+
+        public bool TienePermiso(Usuario usuario, string permiso)
+        {
+            return ChequearPermiso(usuario.Permisos, permiso);
+        }
+
+        private bool ChequearPermiso(List<Permiso> permisos, string permisoAChequear)
+        {
+            foreach (Permiso permiso in permisos)
+            {
+                if (permiso.Nombre == permisoAChequear)
+                {
+                    return true;
+                }
+                else
+                {
+                    bool tienePermiso = ChequearPermiso(permiso.DevolverPerfil(), permisoAChequear);
+                    if (tienePermiso)
+                    {
+                        return true;
+                    }
+                }
+            }
+
+            return false;
+        }
     }
 }

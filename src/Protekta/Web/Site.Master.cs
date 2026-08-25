@@ -13,6 +13,7 @@ namespace Web
     {
         private IdiomaManager manager = new IdiomaManager();
         private IntegridadDatosManager integridadDatosManager = new IntegridadDatosManager();
+        private UsuarioManager usuarioManager = new UsuarioManager();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -24,8 +25,12 @@ namespace Web
             // mostrar el nombre y apellido del usuario logueado
             MostrarUsuarioLogueado();
 
-            // recalcular DV
-            //integridadDatosManager.ActualizaDV();
+            // validar si tiene permisos para acceder a la bitacora
+            if (Session["UsuarioLogueado"] != null)
+            {
+                HyperLinkBitacora.Visible = usuarioManager.TienePermiso((Usuario)Session["UsuarioLogueado"], SistemaConfiguracion.BITACORA);
+                HyperLinkCarrito.Visible = usuarioManager.TienePermiso((Usuario)Session["UsuarioLogueado"], SistemaConfiguracion.CARRITO);
+            }
         }
 
         protected void ddlLanguage_SelectedIndexChanged(object sender, EventArgs e)

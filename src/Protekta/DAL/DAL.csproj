@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="BitacoraMapper.cs" />
     <Compile Include="DigitoVerificadorMapper.cs" />
+    <Compile Include="PermisoMapper.cs" />
     <Compile Include="IdiomaMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqllHelper.cs" />

@@ -17,6 +17,7 @@ namespace BE
         public int IdIdioma { get; set; }
         public string DVH { get; set; }
         public Idioma Idioma { get; set; }
+        public List<Permiso> Permisos { get; set; } = new List<Permiso>();
 
         public override string ToString()
         {

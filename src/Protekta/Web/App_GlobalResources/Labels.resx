@@ -339,4 +339,7 @@ Nuestro Servicio de Higiene y Seguridad esta pensado para aquellos que requieran
   <data name="Login.ErrorMensajeAlcanzoIntentosLogin" xml:space="preserve">
     <value>El usuario fue bloqueado por superar la cantidad  de intentos de login</value>
   </data>
+  <data name="Master.TextoCarrito" xml:space="preserve">
+    <value>Carrito Compras</value>
+  </data>
 </root>

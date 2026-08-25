@@ -50,9 +50,10 @@ namespace DAL
                 return null;
             }
 
+            int UsuarioId = int.Parse(table.Rows[0]["Id"].ToString());
             var usuario = new Usuario()
             {
-                Id = int.Parse(table.Rows[0]["Id"].ToString()),
+                Id = UsuarioId,
                 Email = table.Rows[0]["Email"].ToString(),
                 Nombre = table.Rows[0]["Nombre"].ToString(),
                 Apellido = table.Rows[0]["Apellido"].ToString(),
@@ -65,7 +66,8 @@ namespace DAL
                     Id = int.Parse(table.Rows[0]["IdIdioma"].ToString()),
                     Nombre = table.Rows[0]["Idioma"].ToString(),
                     Codigo = table.Rows[0]["CodigoIdioma"].ToString(),
-                }
+                },
+                Permisos = PermisoMapper.Instance.ObtenerPorUsuario(UsuarioId)
             };
 
             return usuario;
@@ -105,7 +107,8 @@ namespace DAL
                     Id = int.Parse(table.Rows[0]["IdIdioma"].ToString()),
                     Nombre = table.Rows[0]["Idioma"].ToString(),
                     Codigo = table.Rows[0]["CodigoIdioma"].ToString(),
-                }
+                },
+                Permisos = PermisoMapper.Instance.ObtenerPorUsuario(id)
             };
 
             return usuario;
@@ -127,22 +130,24 @@ namespace DAL
             List<Usuario> usuarios = new List<Usuario>();
             foreach (DataRow row in table.Rows)
             {
+                int UsuarioId = int.Parse(row["Id"].ToString());
                 usuarios.Add(new Usuario()
                 {
-                    Id = int.Parse(table.Rows[0]["Id"].ToString()),
-                    Email = table.Rows[0]["Email"].ToString(),
-                    Nombre = table.Rows[0]["Nombre"].ToString(),
-                    Apellido = table.Rows[0]["Apellido"].ToString(),
-                    Password = table.Rows[0]["Password"].ToString(),
-                    Activo = bool.Parse(table.Rows[0]["Activo"].ToString()),
-                    DVH = table.Rows[0]["DVH"].ToString(),
-                    IdIdioma = int.Parse(table.Rows[0]["IdIdioma"].ToString()),
+                    Id = UsuarioId,
+                    Email = row["Email"].ToString(),
+                    Nombre = row["Nombre"].ToString(),
+                    Apellido = row["Apellido"].ToString(),
+                    Password = row["Password"].ToString(),
+                    Activo = bool.Parse(row["Activo"].ToString()),
+                    DVH = row["DVH"].ToString(),
+                    IdIdioma = int.Parse(row["IdIdioma"].ToString()),
                     Idioma = new Idioma()
                     {
-                        Id = int.Parse(table.Rows[0]["IdIdioma"].ToString()),
-                        Nombre = table.Rows[0]["Idioma"].ToString(),
-                        Codigo = table.Rows[0]["CodigoIdioma"].ToString(),
-                    }
+                        Id = int.Parse(row["IdIdioma"].ToString()),
+                        Nombre = row["Idioma"].ToString(),
+                        Codigo = row["CodigoIdioma"].ToString(),
+                    },
+                    Permisos = PermisoMapper.Instance.ObtenerPorUsuario(UsuarioId)
                 });
             }
 
