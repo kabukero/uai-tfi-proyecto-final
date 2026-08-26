@@ -11,11 +11,15 @@ namespace BLL
     public class IntegridadDatosManager
     {
         private DigitoVerificadorMapper mapper = DigitoVerificadorMapper.Instance;
-        private UsuarioMapper usuarioMapper = UsuarioMapper.Instance;
 
-        public void ActualizaDV()
+        public void ActualizarDV(Usuario usuario)
         {
-            mapper.ActualizarDV(usuarioMapper.Obtener("pepe@gmail.com"));
+            mapper.ActualizarDV(usuario);
+        }
+
+        public void ActualizarDV(Bitacora bitacora)
+        {
+            mapper.ActualizarDV(bitacora);
         }
 
         public VerificarIntegridadRespuesta VerificarIntegridad()

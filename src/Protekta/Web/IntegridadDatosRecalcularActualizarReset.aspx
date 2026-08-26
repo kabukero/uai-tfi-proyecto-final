@@ -1,15 +1,21 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="IntegridadDatosRecalcularActualizarReset.aspx.cs" Inherits="Web.IntegridadDatosRecalcularActualizarReset" %>
+﻿<%@ Page Title="Reset DV" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="IntegridadDatosRecalcularActualizarReset.aspx.cs" Inherits="Web.IntegridadDatosRecalcularActualizarReset" %>
 
-<!DOCTYPE html>
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <main aria-labelledby="title">
+        <h2 id="title"><%: Title %></h2>
+        <asp:Label ID="lblPassword" runat="server" Text="Enter Password:" />
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-        </div>
-    </form>
-</body>
-</html>
+        <asp:TextBox
+            ID="txtPassword"
+            runat="server"
+             CssClass="form-control"
+            TextMode="Password" />
+        <br />
+        <asp:Button
+            ID="btnLogin"
+            runat="server"
+            Text="Submit"
+            CssClass="btn btn-primary btn-md"
+            OnClick="btnLogin_Click" />
+    </main>
+</asp:Content>

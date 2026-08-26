@@ -12,9 +12,9 @@ namespace BLL
     {
         private BitacoraMapper mapper = BitacoraMapper.Instance;
 
-        public void Alta(Bitacora bitacora)
+        public int Alta(Bitacora bitacora)
         {
-            mapper.Alta(bitacora);
+            return mapper.Alta(bitacora);
         }
 
         public List<Bitacora> Obtener()

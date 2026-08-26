@@ -106,7 +106,7 @@ namespace DAL
 
         public static int InsertarBitacora(string query, SqlParameter[] parameters)
         {
-            return Insertar(query, parameters, CONN_STRING_BITACORA_KEY);
+            return Insertar(query, parameters, CONN_STRING_PRINCIPAL_KEY);
         }
 
         private static int Insertar(string query, SqlParameter[] parameters, string connStringKey)

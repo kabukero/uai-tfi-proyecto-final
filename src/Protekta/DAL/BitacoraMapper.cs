@@ -32,7 +32,7 @@ namespace DAL
                 return _instance;
             }
         }
-        public void Alta(Bitacora bitacora)
+        public int Alta(Bitacora bitacora)
         {
             string query = "INSERT INTO Bitacora (Descripcion,FechaEvento,UsuarioId,BitacoraTipoEventoId) OUTPUT INSERTED.Id " +
                 "VALUES (@Descripcion,@FechaEvento,@UsuarioId,@BitacoraTipoEventoId)";
@@ -44,7 +44,7 @@ namespace DAL
                 new SqlParameter("@BitacoraTipoEventoId", bitacora.BitacoraTipoEvento.Id)
             };
 
-            SqlHelper.Ejecutar(query, parameters);
+            return SqlHelper.InsertarBitacora(query, parameters);
         }
 
         public List<Bitacora> Obtener()

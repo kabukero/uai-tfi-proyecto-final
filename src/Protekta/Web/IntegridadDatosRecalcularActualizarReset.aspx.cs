@@ -12,7 +12,18 @@ namespace Web
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            new IntegridadDatosManager().RecalcularActualizarDV();
+        }
+
+        protected void btnLogin_Click(object sender, EventArgs e)
+        {
+            // validar password interna
+            if(txtPassword.Text == "123")
+            {
+                // reset de los DVH y DVV
+                new IntegridadDatosManager().RecalcularActualizarDV();
+            }
+            // se redirecciona a la página principal
+            Response.Redirect("~/Default.aspx");
         }
     }
 }

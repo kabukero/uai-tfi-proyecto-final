@@ -39,7 +39,7 @@ namespace DAL
             // Primero el DVH
             string dvh = ObtenerDVH(usuario);
 
-            string query = "UPDATE Usuario SET DVH = @dvh WHERE Id = @id";
+            string query = "UPDATE Usuario SET DVH=@dvh WHERE Id=@id";
             SqlParameter[] parameters = new SqlParameter[]
             {
                 new SqlParameter("@dvh", dvh),
@@ -49,6 +49,23 @@ namespace DAL
 
             // Ahora el DVV
             RecalcularDVV("DVH", "Usuario", "Id");
+        }
+
+        public void ActualizarDV(Bitacora bitacora)
+        {
+            // Primero el DVH
+            string dvh = ObtenerDVH(bitacora);
+
+            string query = "UPDATE Bitacora SET DVH=@dvh WHERE Id=@id";
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+                new SqlParameter("@dvh", dvh),
+                new SqlParameter("@id", bitacora.Id)
+            };
+            SqlHelper.Ejecutar(query, parameters);
+
+            // Ahora el DVV
+            RecalcularDVV("DVH", "Bitacora", "Id");
         }
 
         private string ObtenerDVH(Usuario usuario)
@@ -61,6 +78,17 @@ namespace DAL
                 usuario.Apellido,
                 usuario.Activo,
                 usuario.IdIdioma);
+            return CalcularDV(registro);
+        }
+
+        private string ObtenerDVH(Bitacora bitacora)
+        {
+            string registro = string.Format("{0}{1}{2}{3}{4}",
+                bitacora.Id,
+                bitacora.Descripcion,
+                bitacora.FechaEvento,
+                bitacora.BitacoraTipoEvento.Id,
+                bitacora.Usuario.Id);
             return CalcularDV(registro);
         }
 
@@ -81,7 +109,7 @@ namespace DAL
 
             string dvv = CalcularDV(sb.ToString());
 
-            query = "UPDATE DigitoVerificadorVertical SET DVV = @dvv WHERE NombreTabla = @tabla";
+            query = "UPDATE DigitoVerificadorVertical SET FechaActualizacion=GETDATE(),DVV=@dvv WHERE NombreTabla=@tabla";
             SqlParameter[] parameters = new SqlParameter[]
             {
                 new SqlParameter("@dvv", dvv),
@@ -155,6 +183,12 @@ namespace DAL
             {
                 usuario.Activo = true;
                 ActualizarDV(usuario);
+            }
+
+            List<Bitacora> bitacoras = BitacoraMapper.Instance.Obtener();
+            foreach(Bitacora bitacora in bitacoras)
+            {
+                ActualizarDV(bitacora);
             }
         }
     }

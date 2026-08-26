@@ -64,7 +64,7 @@ namespace Web
                     IncrementarIntentosLogin();
 
                     // validar maximo intentos de login
-                    if (int.Parse(Session["CantidadIntentosLogin"].ToString()) > 3)
+                    if (int.Parse(Session["CantidadIntentosLogin"].ToString()) >= 3)
                     {
                         // mostrar mensaje de error
                         lblLoginError.Text = Labels.Login_ErrorMensajeUsuarioBloqueado;
@@ -75,6 +75,10 @@ namespace Web
 
                         // bloquear usuario por e-mail
                         usuarioManager.Bloquear(TxtEmail.Text);
+
+                        // recalcular usuario DV
+                        respuesta.UsuarioLogin.Activo = false;
+                        integridadDatosManager.ActualizarDV(respuesta.UsuarioLogin);
                     }
                     return;
                 }
@@ -89,8 +93,24 @@ namespace Web
                 // resetear cantidad intentos de login zero
                 Session["CantidadIntentosLogin"] = 0;
 
+                // recalcular usuario DV
+                integridadDatosManager.ActualizarDV(UsuarioLogueado);
+
                 // registrar evento login en la bitacora
-                bitacoraManager.Alta(new BE.Bitacora() { Descripcion = Labels.Bitacora_MensajeLogin, FechaEvento = DateTime.Now, Usuario = UsuarioLogueado, BitacoraTipoEvento = new BitacoraTipoEvento() { Id = (int)BitacoraTipoEventoEnum.Informacion } });
+                BE.Bitacora bitacora = new BE.Bitacora()
+                {
+                    Descripcion = Labels.Bitacora_MensajeLogin,
+                    FechaEvento = DateTime.Now,
+                    Usuario = UsuarioLogueado,
+                    BitacoraTipoEvento = new BitacoraTipoEvento()
+                    {
+                        Id = (int)BitacoraTipoEventoEnum.Informacion
+                    }
+                };
+                bitacora.Id = bitacoraManager.Alta(bitacora);
+
+                // recalcular usuario DV
+                integridadDatosManager.ActualizarDV(bitacora);
 
                 // login process OK
                 IrUrlHome();
