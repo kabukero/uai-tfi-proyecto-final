@@ -22,8 +22,19 @@
                         <asp:Label runat="server" AssociatedControlID="TxtEmail" CssClass="col-md-2 control-label" Text="<%$ Resources:Labels, Login.TextoEmail %>"></asp:Label>
                         <div class="col-md-10">
                             <asp:TextBox runat="server" ID="TxtEmail" CssClass="form-control" TextMode="Email" />
-                            <asp:RequiredFieldValidator runat="server" ControlToValidate="TxtEmail" CssClass="text-danger" 
-                                ErrorMessage="<%$ Resources:Labels, Login.ErrorMensajeValidacionEmail %>" ValidationGroup="Login" />
+                            <asp:RequiredFieldValidator
+                                runat="server"
+                                ControlToValidate="TxtEmail"
+                                CssClass="text-danger d-block"
+                                ErrorMessage="<%$ Resources:Labels, Login.ErrorMensajeValidacionEmail %>"
+                                ValidationGroup="Login" />
+                            <asp:RegularExpressionValidator
+                                runat="server"
+                                ControlToValidate="TxtEmail"
+                                CssClass="text-danger d-block"
+                                ValidationGroup="Login"
+                                ErrorMessage="<%$ Resources:Labels, Login.ErrorMensajeEmailFormatoIncorrecto %>"
+                                ValidationExpression="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" />
                         </div>
                     </div>
                     <div class="form-group">

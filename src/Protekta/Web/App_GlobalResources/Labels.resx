@@ -342,4 +342,13 @@ Nuestro Servicio de Higiene y Seguridad esta pensado para aquellos que requieran
   <data name="Master.TextoCarrito" xml:space="preserve">
     <value>Carrito Compras</value>
   </data>
+  <data name="Login.ErrorMensajeEmailFormatoIncorrecto" xml:space="preserve">
+    <value>Ingrese un e-mail con un formato valido</value>
+  </data>
+  <data name="Default.TextoBienvenida" xml:space="preserve">
+    <value>Bienvenido {0}, su perfil es {1}</value>
+  </data>
+  <data name="Master.TextoProveedor" xml:space="preserve">
+    <value>Proveedores</value>
+  </data>
 </root>

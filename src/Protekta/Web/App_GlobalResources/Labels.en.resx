@@ -342,4 +342,13 @@ Our Occupational Health and Safety Service is designed for organizations that re
   <data name="Master.TextoCarrito" xml:space="preserve">
     <value>Shoppint Cart</value>
   </data>
+  <data name="Login.ErrorMensajeEmailFormatoIncorrecto" xml:space="preserve">
+    <value>Enter an e-mail with valid format</value>
+  </data>
+  <data name="Default.TextoBienvenida" xml:space="preserve">
+    <value>Welcome {0}, your role is {1}</value>
+  </data>
+  <data name="Master.TextoProveedor" xml:space="preserve">
+    <value>Supliers</value>
+  </data>
 </root>

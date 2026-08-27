@@ -13,7 +13,7 @@ namespace Web
         protected void Page_Load(object sender, EventArgs e)
         {
             // Resetear variable de sesion usuario logueado
-            UsuarioLogueado = null;
+            Session["UsuarioLogueado"] = null;
 
             // Reestablecer idioma predeterminado nuevamente
             Session["UsuarioIdioma"] = SistemaConfiguracion.IdiomaPredeterminado;

@@ -4,6 +4,13 @@
 
     <main>
         <section class="row" aria-labelledby="aspnetTitle">
+            <asp:Panel
+                ID="PnlMensajeBienvenida"
+                runat="server"
+                CssClass="alert alert-success"
+                Visible="false">
+                <asp:Label ID="LblMensajeBienvenida" CssClass="fs-4" runat="server" />
+            </asp:Panel>
             <h1>
                 <asp:Literal
                     ID="headingTitle"
@@ -14,6 +21,7 @@
                 <asp:Literal
                     ID="EmpresaDescripcion"
                     runat="server"
+                    Visible="false"
                     Text="<%$ Resources:Labels, Default.DescripcionEmpresa %>" />
             </p>
         </section>

@@ -549,6 +549,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Bienvenido {0}, su perfil es {1}.
+        /// </summary>
+        internal static string Default_TextoBienvenida {
+            get {
+                return ResourceManager.GetString("Default.TextoBienvenida", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Home Page.
         /// </summary>
         internal static string Default_TituloPagina {
@@ -581,6 +590,15 @@ namespace Resources {
         internal static string Login_ErrorMensajeAlcanzoIntentosLogin {
             get {
                 return ResourceManager.GetString("Login.ErrorMensajeAlcanzoIntentosLogin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ingrese un e-mail con un formato valido.
+        /// </summary>
+        internal static string Login_ErrorMensajeEmailFormatoIncorrecto {
+            get {
+                return ResourceManager.GetString("Login.ErrorMensajeEmailFormatoIncorrecto", resourceCulture);
             }
         }
         
@@ -725,6 +743,15 @@ namespace Resources {
         internal static string Master_TextoLogout {
             get {
                 return ResourceManager.GetString("Master.TextoLogout", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Proveedores.
+        /// </summary>
+        internal static string Master_TextoProveedor {
+            get {
+                return ResourceManager.GetString("Master.TextoProveedor", resourceCulture);
             }
         }
     }

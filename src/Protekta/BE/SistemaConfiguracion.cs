@@ -15,5 +15,6 @@ namespace BE
         public const string BACKUPS = "Backups";
         public const string BITACORA = "Gestion Bitacora";
         public const string CARRITO = "ABM Orden";
+        public const string ABM_PROVEEDOR = "ABM Proveedor";
     }
 }

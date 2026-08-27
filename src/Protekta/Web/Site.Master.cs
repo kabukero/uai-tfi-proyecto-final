@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.EnterpriseServices;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -25,12 +26,21 @@ namespace Web
             // mostrar el nombre y apellido del usuario logueado
             MostrarUsuarioLogueado();
 
+            // validar permisos para mostrar / ocultar links navegacion
+            MostrarOcultarLinkNavegacion();
+        }
+
+        private void MostrarOcultarLinkNavegacion()
+        {
             // validar si tiene permisos para acceder a la bitacora
-            if (Session["UsuarioLogueado"] != null)
+            if (Session["UsuarioLogueado"] == null)
             {
-                HyperLinkBitacora.Visible = usuarioManager.TienePermiso((Usuario)Session["UsuarioLogueado"], SistemaConfiguracion.BITACORA);
-                HyperLinkCarrito.Visible = usuarioManager.TienePermiso((Usuario)Session["UsuarioLogueado"], SistemaConfiguracion.CARRITO);
+                return;
             }
+
+            HyperLinkBitacora.Visible = usuarioManager.TienePermiso((Usuario)Session["UsuarioLogueado"], SistemaConfiguracion.BITACORA);
+            HyperLinkCarrito.Visible = usuarioManager.TienePermiso((Usuario)Session["UsuarioLogueado"], SistemaConfiguracion.CARRITO);
+            HyperLinkProveedor.Visible = usuarioManager.TienePermiso((Usuario)Session["UsuarioLogueado"], SistemaConfiguracion.ABM_PROVEEDOR);
         }
 
         protected void ddlLanguage_SelectedIndexChanged(object sender, EventArgs e)
@@ -41,7 +51,7 @@ namespace Web
 
         private void MostrarUsuarioLogueado()
         {
-            HyperLink7.Text = Session["UsuarioLogueado"] == null ? "" : ((Usuario)Session["UsuarioLogueado"]).ToString();
+            HyperLinkUsuarioLogin.Text = Session["UsuarioLogueado"] == null ? "" : ((Usuario)Session["UsuarioLogueado"]).ToString();
         }
 
         private void CargarIdiomas()
