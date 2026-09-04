@@ -693,11 +693,47 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Backup.
+        /// </summary>
+        internal static string Master_TextoBackup {
+            get {
+                return ResourceManager.GetString("Master.TextoBackup", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Carrito Compras.
         /// </summary>
         internal static string Master_TextoCarrito {
             get {
                 return ResourceManager.GetString("Master.TextoCarrito", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Clientes.
+        /// </summary>
+        internal static string Master_TextoCliente {
+            get {
+                return ResourceManager.GetString("Master.TextoCliente", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Incidentes.
+        /// </summary>
+        internal static string Master_TextoIncidentes {
+            get {
+                return ResourceManager.GetString("Master.TextoIncidentes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Inventario.
+        /// </summary>
+        internal static string Master_TextoInventario {
+            get {
+                return ResourceManager.GetString("Master.TextoInventario", resourceCulture);
             }
         }
         

@@ -351,4 +351,16 @@ Nuestro Servicio de Higiene y Seguridad esta pensado para aquellos que requieran
   <data name="Master.TextoProveedor" xml:space="preserve">
     <value>Proveedores</value>
   </data>
+  <data name="Master.TextoCliente" xml:space="preserve">
+    <value>Clientes</value>
+  </data>
+  <data name="Master.TextoIncidentes" xml:space="preserve">
+    <value>Incidentes</value>
+  </data>
+  <data name="Master.TextoInventario" xml:space="preserve">
+    <value>Inventario</value>
+  </data>
+  <data name="Master.TextoBackup" xml:space="preserve">
+    <value>Backup</value>
+  </data>
 </root>

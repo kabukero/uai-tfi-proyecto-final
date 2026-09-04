@@ -42,15 +42,6 @@ namespace Web
         protected global::System.Web.UI.WebControls.HyperLink HyperLink3;
 
         /// <summary>
-        /// ddlLanguage control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlLanguage;
-
-        /// <summary>
         /// HyperLink4 control.
         /// </summary>
         /// <remarks>
@@ -69,6 +60,15 @@ namespace Web
         protected global::System.Web.UI.WebControls.HyperLink HyperLinkProveedor;
 
         /// <summary>
+        /// HyperLinkCliente control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HyperLinkCliente;
+
+        /// <summary>
         /// HyperLinkCarrito control.
         /// </summary>
         /// <remarks>
@@ -78,6 +78,24 @@ namespace Web
         protected global::System.Web.UI.WebControls.HyperLink HyperLinkCarrito;
 
         /// <summary>
+        /// HyperLinkIncidentes control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HyperLinkIncidentes;
+
+        /// <summary>
+        /// HyperLinkInventario control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HyperLinkInventario;
+
+        /// <summary>
         /// HyperLinkBitacora control.
         /// </summary>
         /// <remarks>
@@ -85,6 +103,15 @@ namespace Web
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink HyperLinkBitacora;
+
+        /// <summary>
+        /// HyperLinkBackup control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HyperLinkBackup;
 
         /// <summary>
         /// HyperLinkUsuarioLogin control.
@@ -103,6 +130,15 @@ namespace Web
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink HyperLink5;
+
+        /// <summary>
+        /// ddlLanguage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlLanguage;
 
         /// <summary>
         /// MainContent control.

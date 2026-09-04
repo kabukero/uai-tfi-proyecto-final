@@ -19,7 +19,7 @@ namespace Web
             ValidarExisteSesionLogin();
 
             // validar si el usuario tiene permisos
-            if(!usuarioManager.TienePermiso((Usuario)Session["UsuarioLogueado"], SistemaConfiguracion.BITACORA))
+            if(!usuarioManager.TienePermiso((Usuario)Session["UsuarioLogueado"], SistemaConfiguracion.GESTION_BITACORA))
             {
                 Response.Redirect("Default.aspx");
             }

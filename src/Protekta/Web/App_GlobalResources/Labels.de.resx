@@ -118,148 +118,148 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Default.DescripcionEmpresa" xml:space="preserve">
-    <value>Occupational Health and Safety is a multidisciplinary field whose primary objective is to protect the lives and preserve the health and well-being of workers. One of the most important aspects within organizations is Occupational Risk Prevention, as effective risk prevention improves the relationship between the team and the company, creating a commitment that benefits both parties.</value>
+    <value>Arbeitssicherheit und Arbeitshygiene stellen ein multidisziplinäres Fachgebiet dar, dessen Hauptziel der Schutz des Lebens sowie die Erhaltung der Gesundheit und des Wohlbefindens der Arbeitnehmer ist. Einer der wichtigsten Aspekte innerhalb von Organisationen ist die Prävention von Arbeitsrisiken, da eine gute Risikoprävention die Beziehung zwischen Team und Unternehmen verbessert und eine für beide Seiten vorteilhafte Bindung des Engagements schafft.</value>
   </data>
   <data name="Default.EncabezadoPrincipal" xml:space="preserve">
-    <value>Occupational Health and Safety Services</value>
+    <value>Arbeitssicherheits- und Hygienedienst</value>
   </data>
   <data name="Default.TituloPagina" xml:space="preserve">
-    <value>Home Page</value>
+    <value>Startseite</value>
   </data>
   <data name="Default.EncabezadoPrevencionTradicional" xml:space="preserve">
-    <value>Traditional Prevention</value>
+    <value>Traditionelle Prävention</value>
   </data>
   <data name="Default.DescripcionPrevencionTradicional" xml:space="preserve">
-    <value>Occupational Health and Safety professionals + audits + measurements + procedures + training.</value>
+    <value>Fachkräfte für Arbeitssicherheit und Hygiene + Audits + Messungen + Verfahren + Schulungen.</value>
   </data>
   <data name="Default.BotonContratar" xml:space="preserve">
-    <value>Buy &gt;</value>
+    <value>Beauftragen &gt;</value>
   </data>
   <data name="Default.EncabezadoGestionDigital" xml:space="preserve">
-    <value>Digital Management</value>
+    <value>Digitale Verwaltung</value>
   </data>
   <data name="Default.DescripcionGestionDigital" xml:space="preserve">
-    <value>Platform for managing risks, incidents, audits, PPE, training, and corrective actions.</value>
+    <value>Plattform zur Verwaltung von Risiken, Vorfällen, Audits, PSA, Schulungen und Korrekturmaßnahmen.</value>
   </data>
   <data name="Default.EncabezadoPrevencionIA" xml:space="preserve">
-    <value>AI-Powered Intelligent Prevention</value>
+    <value>Intelligente Prävention mit KI</value>
   </data>
   <data name="Default.DescripcionPrevencionIA" xml:space="preserve">
-    <value>Artificial Intelligence analyzes the operational environment, identifies risk situations, and generates alerts to enable intervention before an accident occurs.</value>
+    <value>Künstliche Intelligenz, die das betriebliche Umfeld analysiert, Risikosituationen erkennt und Warnmeldungen erzeugt, um einzugreifen, bevor ein Unfall eintritt.</value>
   </data>
   <data name="AcercaDe.DescripcionAcercaDe" xml:space="preserve">
-    <value>Occupational Health and Safety is a multidisciplinary field whose primary objective is to protect the lives and preserve the health and well-being of workers.
-One of the most important aspects within organizations is Occupational Risk Prevention, as effective risk prevention improves the relationship between the team and the company, creating a commitment that benefits both parties.
-Good working environment conditions increase employee motivation, competitiveness, and organizational profitability.
-Our Occupational Health and Safety Service is designed for organizations that require external support in managing their risks. We have extensive experience and the expertise necessary to provide high-quality services based on the safety standards established by applicable legislation.</value>
+    <value>Arbeitssicherheit und Arbeitshygiene stellen ein multidisziplinäres Fachgebiet dar, dessen Hauptziel der Schutz des Lebens sowie die Erhaltung der Gesundheit und des Wohlbefindens der Arbeitnehmer ist.
+Einer der wichtigsten Aspekte innerhalb von Organisationen ist die Prävention von Arbeitsrisiken, da eine gute Risikoprävention die Beziehung zwischen Team und Unternehmen verbessert und eine für beide Seiten vorteilhafte Bindung des Engagements schafft.
+Gute Arbeitsbedingungen steigern die Motivation der Mitarbeiter sowie die Wettbewerbsfähigkeit und Rentabilität der Organisation.
+Unser Arbeitssicherheits- und Hygienedienst richtet sich an Unternehmen, die externe Unterstützung beim Risikomanagement benötigen. Wir verfügen über umfassende Erfahrung und das notwendige Fachwissen, um einen Service von höchster Qualität zu bieten, basierend auf den durch gesetzliche Vorschriften festgelegten Sicherheitsstandards.</value>
   </data>
   <data name="AcercaDe.TextoServicio" xml:space="preserve">
-    <value>Services</value>
+    <value>Dienstleistung</value>
   </data>
   <data name="AcercaDe.TextoAsesoramientoExterno" xml:space="preserve">
-    <value>External Occupational Health and Safety Consulting</value>
+    <value>Externe Beratung für Arbeitssicherheit und Arbeitshygiene</value>
   </data>
   <data name="AcercaDe.TextoAsesoramientoExterno1" xml:space="preserve">
-    <value>Accident Statistics</value>
+    <value>Unfallstatistik</value>
   </data>
   <data name="AcercaDe.TextoAsesoramientoExterno2" xml:space="preserve">
-    <value>Occupational Safety Diagnostic Audits</value>
+    <value>Diagnoseaudits im Bereich Arbeitssicherheit</value>
   </data>
   <data name="AcercaDe.TextoAsesoramientoExterno3" xml:space="preserve">
-    <value>Emergency Evacuation Plans and Emergency Response Team Training conducted by qualified professionals</value>
+    <value>Evakuierungspläne und Ausbildung von Notfallteams durch qualifizierte Fachkräfte</value>
   </data>
   <data name="AcercaDe.TextoAsesoramientoExterno4" xml:space="preserve">
-    <value>Risk Assessments</value>
+    <value>Durchführung von Risikobewertungen</value>
   </data>
   <data name="AcercaDe.TextoAsesoramientoExterno5" xml:space="preserve">
-    <value>Safety Committee Organization</value>
+    <value>Organisation von Sicherheitsausschüssen</value>
   </data>
   <data name="AcercaDe.TextoAsesoramientoExterno6" xml:space="preserve">
-    <value>Representation before Regulatory and Inspection Authorities</value>
+    <value>Vertretung bei Inspektionen von Aufsichtsbehörden</value>
   </data>
   <data name="AcercaDe.TextoAsesoramientoExterno7" xml:space="preserve">
-    <value>Safety Programs</value>
+    <value>Sicherheitsprogramme</value>
   </data>
   <data name="AcercaDe.TextoAsesoramientoExterno8" xml:space="preserve">
-    <value>Risk Mapping, analyzing risks by job position and work area</value>
+    <value>Erstellung von Risikokarten durch Analyse der Risiken nach Arbeitsplätzen und Bereichen</value>
   </data>
   <data name="AcercaDe.TextoAsesoramientoExterno9" xml:space="preserve">
-    <value>Fire Load Assessments</value>
+    <value>Brandlastanalysen</value>
   </data>
   <data name="AcercaDe.TextoAsesoramientoExterno10" xml:space="preserve">
-    <value>Noise Level Assessments</value>
+    <value>Lärmmessungen</value>
   </data>
   <data name="AcercaDe.TextoAsesoramientoExterno11" xml:space="preserve">
-    <value>Lighting Level Assessments</value>
+    <value>Beleuchtungsstärkemessungen</value>
   </data>
   <data name="AcercaDe.TextoAsesoramientoExterno12" xml:space="preserve">
-    <value>Grounding and Electrical Continuity Assessments</value>
+    <value>Erdungs- und Durchgangsmessungen elektrischer Anlagen</value>
   </data>
   <data name="AcercaDe.TextoAsesoramientoExterno13" xml:space="preserve">
-    <value>Hand-Arm and Whole-Body Vibration Assessments</value>
+    <value>Untersuchungen von Hand-Arm- und Ganzkörpervibrationen</value>
   </data>
   <data name="AcercaDe.TextoAsesoramientoExterno14" xml:space="preserve">
-    <value>Thermal Load Assessments</value>
+    <value>Wärmebelastungsanalysen</value>
   </data>
   <data name="AcercaDe.TextoAsesoramientoExterno15" xml:space="preserve">
-    <value>Workplace Accident Investigation</value>
+    <value>Untersuchung von Arbeitsunfällen</value>
   </data>
   <data name="AcercaDe.TextoAsesoramientoExterno16" xml:space="preserve">
-    <value>Training and education according to each client's needs, on-site and through our platform</value>
+    <value>Schulungen entsprechend den Anforderungen jedes Kunden, vor Ort und über eine Plattform</value>
   </data>
   <data name="AcercaDe.TextoAsesoramientoExterno17" xml:space="preserve">
-    <value>Development of Safe Work Procedures</value>
+    <value>Erstellung sicherer Arbeitsverfahren</value>
   </data>
   <data name="AcercaDe.TextoServicioIA1" xml:space="preserve">
-    <value>Real-time AI-powered safety monitoring.</value>
+    <value>Echtzeit-Sicherheitsüberwachung mittels KI.</value>
   </data>
   <data name="AcercaDe.TextoServicioIA2" xml:space="preserve">
-    <value>Automatic detection of unsafe acts and conditions.</value>
+    <value>Automatische Erkennung unsicherer Handlungen und Bedingungen.</value>
   </data>
   <data name="AcercaDe.TextoServicioIA3" xml:space="preserve">
-    <value>Detection of PPE compliance violations.</value>
+    <value>Erkennung von Verstößen gegen die Verwendung von PSA.</value>
   </data>
   <data name="AcercaDe.TextoServicioIA4" xml:space="preserve">
-    <value>Detection of entry into or presence within restricted areas.</value>
+    <value>Erkennung des Zutritts oder Aufenthalts in gesperrten Bereichen.</value>
   </data>
   <data name="AcercaDe.TextoServicioIA5" xml:space="preserve">
-    <value>Identification of potentially hazardous behaviors.</value>
+    <value>Identifizierung potenziell gefährlicher Verhaltensweisen.</value>
   </data>
   <data name="AcercaDe.TextoServicioIA6" xml:space="preserve">
-    <value>Automatic alerts for hazardous situations.</value>
+    <value>Automatische Warnmeldungen bei Risikosituationen.</value>
   </data>
   <data name="AcercaDe.TextoServicioIA7" xml:space="preserve">
-    <value>Intelligent monitoring of critical areas and machinery.</value>
+    <value>Intelligente Überwachung kritischer Bereiche und Maschinen.</value>
   </data>
   <data name="AcercaDe.TextoServicioIA8" xml:space="preserve">
-    <value>Analysis of behavior patterns and risk situations.</value>
+    <value>Analyse von Verhaltensmustern und Risikosituationen.</value>
   </data>
   <data name="AcercaDe.TextoServicioIA9" xml:space="preserve">
-    <value>Generation of intelligent safety indicators.</value>
+    <value>Erstellung intelligenter Sicherheitskennzahlen.</value>
   </data>
   <data name="AcercaDe.TextoServicioIA10" xml:space="preserve">
-    <value>Prediction and prevention of potential accidents.</value>
+    <value>Vorhersage und Prävention möglicher Unfälle.</value>
   </data>
   <data name="AcercaDe.TextoServicioIA11" xml:space="preserve">
-    <value>Automatic generation of safety reports.</value>
+    <value>Automatische Erstellung von Sicherheitsberichten.</value>
   </data>
   <data name="AcercaDe.TextoServicioIA12" xml:space="preserve">
-    <value>Intelligent tracking of corrective actions.</value>
+    <value>Intelligente Nachverfolgung von Korrekturmaßnahmen.</value>
   </data>
   <data name="AcercaDe.TextoServicioIA13" xml:space="preserve">
-    <value>Integration of AI with incident management, audits, training, and risk maps.</value>
+    <value>Integration der KI in das Management von Vorfällen, Audits, Schulungen und Risikokarten.</value>
   </data>
   <data name="AcercaDe.TextoServicioIA14" xml:space="preserve">
-    <value>Continuous risk prevention combining the supervision of Occupational Health and Safety professionals with AI.</value>
+    <value>Kontinuierliche Risikoprävention durch die Kombination der Überwachung durch Fachkräfte für Arbeitssicherheit und Hygiene mit KI.</value>
   </data>
   <data name="AcercaDe.TextoServicioIA" xml:space="preserve">
-    <value>Artificial Intelligence Services</value>
+    <value>Dienstleistungen für Künstliche Intelligenz</value>
   </data>
   <data name="Contacto.Encabezado" xml:space="preserve">
-    <value>Your Contact Page</value>
+    <value>Ihre Kontaktseite</value>
   </data>
   <data name="Contacto.DireccionTitulo" xml:space="preserve">
-    <value>Protekta Address</value>
+    <value>Adresse von Protekta</value>
   </data>
   <data name="Contacto.Direccion" xml:space="preserve">
     <value>Argentina, CABA, Av. Cabildo 123</value>
@@ -268,7 +268,7 @@ Our Occupational Health and Safety Service is designed for organizations that re
     <value>425.555.0100</value>
   </data>
   <data name="Contacto.TextoSoporte" xml:space="preserve">
-    <value>Support:</value>
+    <value>Kundensupport:</value>
   </data>
   <data name="Contacto.TextoMarketing" xml:space="preserve">
     <value>Marketing:</value>
@@ -280,85 +280,85 @@ Our Occupational Health and Safety Service is designed for organizations that re
     <value>marketing@protekta.com</value>
   </data>
   <data name="Master.TextoLinkHome" xml:space="preserve">
-    <value>Home</value>
+    <value>Startseite</value>
   </data>
   <data name="Master.TextoLinkAcercaDe" xml:space="preserve">
-    <value>About us</value>
+    <value>Über uns</value>
   </data>
   <data name="Master.TextoLinkContacto" xml:space="preserve">
-    <value>Contact</value>
+    <value>Kontakt</value>
   </data>
   <data name="Login.Encabezado" xml:space="preserve">
-    <value>Use your credentials to enter the system</value>
+    <value>Geben Sie Ihre Anmeldedaten ein, um sich anzumelden.</value>
   </data>
   <data name="Login.TextoEmail" xml:space="preserve">
-    <value>E-mail</value>
+    <value>E-Mail</value>
   </data>
   <data name="Login.TextoPassword" xml:space="preserve">
-    <value>Password</value>
+    <value>Passwort</value>
   </data>
   <data name="Login.TextoRegistrase" xml:space="preserve">
-    <value>Sign up as new user</value>
+    <value>Als neuer Benutzer registrieren</value>
   </data>
   <data name="Master.TextoLinkLogin" xml:space="preserve">
-    <value>Login</value>
+    <value>Anmelden</value>
   </data>
   <data name="Login.ErrorMensajeValidacionEmail" xml:space="preserve">
-    <value>Please enter the e-mail</value>
+    <value>Das E-Mail-Feld ist erforderlich.</value>
   </data>
   <data name="Login.ErrorMensajeValidacionPassword" xml:space="preserve">
-    <value>Please enter the password</value>
+    <value>Das Passwortfeld ist erforderlich.</value>
   </data>
   <data name="Login.BotonLoginTexto" xml:space="preserve">
-    <value>Sign In</value>
+    <value>Anmelden</value>
   </data>
   <data name="Login.ErrorMensajeUsuarioNoExiste" xml:space="preserve">
-    <value>The user does not exists in the system</value>
+    <value>Der Benutzer existiert nicht im System.</value>
   </data>
   <data name="Login.ErrorMensajeUsuarioBloqueado" xml:space="preserve">
-    <value>The user is blocked</value>
+    <value>Der Benutzer ist gesperrt.</value>
   </data>
   <data name="Login.ErrorMensajePasswordIncorrecta" xml:space="preserve">
-    <value>The password is wrong</value>
+    <value>Das Passwort ist falsch.</value>
   </data>
   <data name="Master.TextoLogout" xml:space="preserve">
-    <value>Log Out</value>
+    <value>Abmelden</value>
   </data>
   <data name="Login.ErrorMensajeIntegridadDatos" xml:space="preserve">
-    <value>The operation failed due to a data integrity violation.</value>
+    <value>Datenintegritätsfehler</value>
   </data>
   <data name="Bitacora.MensajeLogin" xml:space="preserve">
-    <value>Login: user sign in</value>
+    <value>Anmeldung: Benutzer hat sich angemeldet</value>
   </data>
   <data name="Bitacora.Encabezado" xml:space="preserve">
-    <value>System Log list</value>
+    <value>Liste der Systemereignisse</value>
   </data>
   <data name="Master.Bitacora" xml:space="preserve">
-    <value>System Log</value>
+    <value>Protokoll</value>
   </data>
   <data name="Login.ErrorMensajeAlcanzoIntentosLogin" xml:space="preserve">
-    <value>The user has been blocked after exceeding the allowed number of login attempts</value>
+    <value>Der Benutzer wurde gesperrt, weil die maximale Anzahl von Anmeldeversuchen überschritten wurde.</value>
   </data>
   <data name="Master.TextoCarrito" xml:space="preserve">
-    <value>Shoppint Cart</value>
+    <value>Warenkorb</value>
   </data>
   <data name="Login.ErrorMensajeEmailFormatoIncorrecto" xml:space="preserve">
-    <value>Enter an e-mail with valid format</value>
+    <value>Bitte geben Sie eine E-Mail-Adresse im gültigen Format ein.</value>
   </data>
   <data name="Default.TextoBienvenida" xml:space="preserve">
-    <value>Welcome {0}, your role is {1}</value>
+    <value>Willkommen {0}, Ihr Profil ist {1}</value>
   </data>
   <data name="Master.TextoProveedor" xml:space="preserve">
-    <value>Supliers</value>
+    <value>Lieferanten</value>
   </data>
   <data name="Master.TextoCliente" xml:space="preserve">
-    <value>Customers</value>
+    <value>Kunden</value>
   </data>
   <data name="Master.TextoIncidentes" xml:space="preserve">
-    <value>Incidents</value>
+    <value>Störungen</value>
   </data>
   <data name="Master.TextoInventario" xml:space="preserve">
-    <value>Inventory</value>
+    <value>Inventar</value>
   </data>
   <data name="Master.TextoBackup" xml:space="preserve">
     <value>Backup</value>

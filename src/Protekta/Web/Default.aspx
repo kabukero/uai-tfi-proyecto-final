@@ -40,7 +40,14 @@
                         runat="server"
                         Text="<%$ Resources:Labels, Default.DescripcionPrevencionTradicional %>" />
                 </p>
-                <p><asp:Button runat="server" Text="<%$ Resources:Labels, Default.BotonContratar %>" CssClass="btn btn-primary btn-md" /></p>
+                <p>
+                    <asp:Button ID="BtnPlanPrevencionTradicional"
+                        runat="server"
+                        Text="<%$ Resources:Labels, Default.BotonContratar %>"
+                        CssClass="btn btn-primary btn-md"
+                        CommandArgument="PlanTradicional"
+                        OnCommand="BtnPlan_Command" />
+                </p>
             </section>
             <section class="col-md-4" aria-labelledby="librariesTitle">
                 <h2>
@@ -55,7 +62,14 @@
                         runat="server"
                         Text="<%$ Resources:Labels, Default.DescripcionGestionDigital %>" />
                 </p>
-                <p><asp:Button runat="server" Text="<%$ Resources:Labels, Default.BotonContratar %>" CssClass="btn btn-primary btn-md" /></p>
+                <p>
+                    <asp:Button ID="BtnPlanGestionDigital"
+                        runat="server"
+                        Text="<%$ Resources:Labels, Default.BotonContratar %>"
+                        CssClass="btn btn-primary btn-md"
+                        CommandArgument="PlanGestionDigital"
+                        OnCommand="BtnPlan_Command" />
+                </p>
             </section>
             <section class="col-md-4" aria-labelledby="hostingTitle">
                 <h2>
@@ -70,7 +84,14 @@
                         runat="server"
                         Text="<%$ Resources:Labels, Default.DescripcionPrevencionIA %>" />
                 </p>
-                <p><asp:Button runat="server" Text="<%$ Resources:Labels, Default.BotonContratar %>" CssClass="btn btn-primary btn-md" /></p>
+                <p>
+                    <asp:Button ID="BtnPlanPrevencionIA"
+                        runat="server"
+                        Text="<%$ Resources:Labels, Default.BotonContratar %>"
+                        CssClass="btn btn-primary btn-md"
+                        CommandArgument="PlanPrevencionIA"
+                        OnCommand="BtnPlan_Command" />
+                </p>
             </section>
         </div>
     </main>

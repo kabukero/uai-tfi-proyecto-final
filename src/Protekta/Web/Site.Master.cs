@@ -32,15 +32,35 @@ namespace Web
 
         private void MostrarOcultarLinkNavegacion()
         {
-            // validar si tiene permisos para acceder a la bitacora
+            // validar si el usuario esta logueado
             if (Session["UsuarioLogueado"] == null)
             {
                 return;
             }
 
-            HyperLinkBitacora.Visible = usuarioManager.TienePermiso((Usuario)Session["UsuarioLogueado"], SistemaConfiguracion.BITACORA);
-            HyperLinkCarrito.Visible = usuarioManager.TienePermiso((Usuario)Session["UsuarioLogueado"], SistemaConfiguracion.CARRITO);
-            HyperLinkProveedor.Visible = usuarioManager.TienePermiso((Usuario)Session["UsuarioLogueado"], SistemaConfiguracion.ABM_PROVEEDOR);
+            // validar roles y permisos del usuario logueado
+            bool MostrarBitacoraLink = usuarioManager.TienePermiso((Usuario)Session["UsuarioLogueado"], SistemaConfiguracion.GESTION_BITACORA);
+            bool MostrarCarritoLink = usuarioManager.TienePermiso((Usuario)Session["UsuarioLogueado"], SistemaConfiguracion.ABM_ORDEN);
+            bool MostrarProveedorLink  = usuarioManager.TienePermiso((Usuario)Session["UsuarioLogueado"], SistemaConfiguracion.ABM_PROVEEDOR);
+            bool MostrarClienteLink  = usuarioManager.TienePermiso((Usuario)Session["UsuarioLogueado"], SistemaConfiguracion.ABM_CLIENTE);
+            bool MostrarIncidenteLink = usuarioManager.TienePermiso((Usuario)Session["UsuarioLogueado"], SistemaConfiguracion.ABM_INCIDENTE);
+            bool MostrarInventarioLink = usuarioManager.TienePermiso((Usuario)Session["UsuarioLogueado"], SistemaConfiguracion.ABM_INVENTARIO);
+            bool MostrarBackupLink = usuarioManager.TienePermiso((Usuario)Session["UsuarioLogueado"], SistemaConfiguracion.GESTION_BACKUP);
+
+            HyperLinkBitacora.Visible = MostrarBitacoraLink;
+            HyperLinkCarrito.Visible = MostrarCarritoLink;
+            HyperLinkProveedor.Visible = MostrarProveedorLink;
+            HyperLinkCliente.Visible = MostrarClienteLink;
+            HyperLinkIncidentes.Visible = MostrarIncidenteLink;
+            HyperLinkInventario.Visible = MostrarInventarioLink;
+            HyperLinkBackup.Visible = MostrarBackupLink;
+
+            //HyperLinkCarrito.Visible = usuarioManager.TienePermiso((Usuario)Session["UsuarioLogueado"], SistemaConfiguracion.ABM_ORDEN);
+            //HyperLinkProveedor.Visible = usuarioManager.TienePermiso((Usuario)Session["UsuarioLogueado"], SistemaConfiguracion.ABM_PROVEEDOR);
+            //HyperLinkCliente.Visible = usuarioManager.TienePermiso((Usuario)Session["UsuarioLogueado"], SistemaConfiguracion.ABM_CLIENTE);
+            //HyperLinkIncidentes.Visible = usuarioManager.TienePermiso((Usuario)Session["UsuarioLogueado"], SistemaConfiguracion.ABM_INCIDENTE);
+            //HyperLinkInventario.Visible = usuarioManager.TienePermiso((Usuario)Session["UsuarioLogueado"], SistemaConfiguracion.ABM_INVENTARIO);
+            //HyperLinkBackup.Visible = usuarioManager.TienePermiso((Usuario)Session["UsuarioLogueado"], SistemaConfiguracion.GESTION_BACKUP);
         }
 
         protected void ddlLanguage_SelectedIndexChanged(object sender, EventArgs e)
@@ -56,6 +76,7 @@ namespace Web
 
         private void CargarIdiomas()
         {
+            // cargar el dropdownlist idiomas con los lenguajes disponibles en el sistema
             List<Idioma> items = manager.Obtener();
             ddlLanguage.DataSource = items;
             ddlLanguage.DataTextField = "Nombre";

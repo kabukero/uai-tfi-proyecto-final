@@ -188,6 +188,11 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_GlobalResources\Labels.de.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labels.de.resx</DependentUpon>
+    </Compile>
     <Compile Include="App_GlobalResources\Labels.en.designer.cs">
       <DependentUpon>Labels.en.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -313,6 +318,12 @@
       <Project>{7f6aac1d-c528-44ea-a703-9171c49ac659}</Project>
       <Name>BLL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Labels.de.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Labels.de.designer.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

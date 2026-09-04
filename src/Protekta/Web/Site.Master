@@ -73,17 +73,6 @@
                         </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="nav-item">
-                            <asp:DropDownList
-                                ID="ddlLanguage"
-                                runat="server"
-                                AutoPostBack="true"
-                                CssClass="form-control"
-                                OnSelectedIndexChanged="ddlLanguage_SelectedIndexChanged">
-                                <%--                        <asp:ListItem Text="English" Value="en-US" />
-                                <asp:ListItem Text="Español" Value="es-AR" />--%>
-                            </asp:DropDownList>
-                        </li>
                         <%
                            if (Session["UsuarioLogueado"] == null)
                            {
@@ -109,6 +98,14 @@
                             </li>
                             <li class="nav-item">
                                 <asp:HyperLink
+                                    ID="HyperLinkCliente"
+                                    runat="server"
+                                    CssClass="nav-link"
+                                    NavigateUrl="~/Default"
+                                    Text="<%$ Resources:Labels, Master.TextoCliente %>" />
+                            </li>
+                            <li class="nav-item">
+                                <asp:HyperLink
                                     ID="HyperLinkCarrito"
                                     runat="server"
                                     CssClass="nav-link"
@@ -117,11 +114,35 @@
                             </li>
                             <li class="nav-item">
                                 <asp:HyperLink
+                                    ID="HyperLinkIncidentes"
+                                    runat="server"
+                                    CssClass="nav-link"
+                                    NavigateUrl="~/Default"
+                                    Text="<%$ Resources:Labels, Master.TextoIncidentes %>" />
+                            </li>
+                            <li class="nav-item">
+                                <asp:HyperLink
+                                    ID="HyperLinkInventario"
+                                    runat="server"
+                                    CssClass="nav-link"
+                                    NavigateUrl="~/Default"
+                                    Text="<%$ Resources:Labels, Master.TextoInventario %>" />
+                            </li>
+                            <li class="nav-item">
+                                <asp:HyperLink
                                     ID="HyperLinkBitacora"
                                     runat="server"
                                     CssClass="nav-link"
                                     NavigateUrl="~/Bitacora"
                                     Text="<%$ Resources:Labels, Master.Bitacora %>" />
+                            </li>
+                            <li class="nav-item">
+                                <asp:HyperLink
+                                    ID="HyperLinkBackup"
+                                    runat="server"
+                                    CssClass="nav-link"
+                                    NavigateUrl="~/Default"
+                                    Text="<%$ Resources:Labels, Master.TextoBackup %>" />
                             </li>
                             <li class="nav-item">
                                 <asp:HyperLink
@@ -142,6 +163,15 @@
                         <%
                             }
                         %>
+                        <li class="nav-item">
+                            <asp:DropDownList
+                                ID="ddlLanguage"
+                                runat="server"
+                                AutoPostBack="true"
+                                CssClass="form-control"
+                                OnSelectedIndexChanged="ddlLanguage_SelectedIndexChanged">
+                            </asp:DropDownList>
+                        </li>
                     </ul>
                 </div>
             </div>
