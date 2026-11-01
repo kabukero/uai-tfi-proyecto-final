@@ -141,7 +141,7 @@
                                     ID="HyperLinkBackup"
                                     runat="server"
                                     CssClass="nav-link"
-                                    NavigateUrl="~/Default"
+                                    NavigateUrl="~/Backup"
                                     Text="<%$ Resources:Labels, Master.TextoBackup %>" />
                             </li>
                             <li class="nav-item">

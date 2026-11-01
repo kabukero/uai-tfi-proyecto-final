@@ -363,4 +363,13 @@ Unser Arbeitssicherheits- und Hygienedienst richtet sich an Unternehmen, die ext
   <data name="Master.TextoBackup" xml:space="preserve">
     <value>Backup</value>
   </data>
+  <data name="Backup.Encabezado" xml:space="preserve">
+    <value>Backup Liste</value>
+  </data>
+  <data name="Backup.Error" xml:space="preserve">
+    <value>Ein interner Fehler ist aufgetreten. Bitte versuchen Sie es später erneut.</value>
+  </data>
+  <data name="Backup.RealizarBackup" xml:space="preserve">
+    <value>Backup durchführen.</value>
+  </data>
 </root>

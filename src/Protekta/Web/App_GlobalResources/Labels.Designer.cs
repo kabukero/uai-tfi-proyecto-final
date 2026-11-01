@@ -378,6 +378,33 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Listado de backups.
+        /// </summary>
+        internal static string Backup_Encabezado {
+            get {
+                return ResourceManager.GetString("Backup.Encabezado", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ocurrio un error interno. Vuelva a intentar mas tarde..
+        /// </summary>
+        internal static string Backup_Error {
+            get {
+                return ResourceManager.GetString("Backup.Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Realizar Backup.
+        /// </summary>
+        internal static string Backup_RealizarBackup {
+            get {
+                return ResourceManager.GetString("Backup.RealizarBackup", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Listado de eventos del sistema.
         /// </summary>
         internal static string Bitacora_Encabezado {

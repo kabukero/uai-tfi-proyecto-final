@@ -363,4 +363,13 @@ Nuestro Servicio de Higiene y Seguridad esta pensado para aquellos que requieran
   <data name="Master.TextoBackup" xml:space="preserve">
     <value>Backup</value>
   </data>
+  <data name="Backup.Encabezado" xml:space="preserve">
+    <value>Listado de backups</value>
+  </data>
+  <data name="Backup.Error" xml:space="preserve">
+    <value>Ocurrio un error interno. Vuelva a intentar mas tarde.</value>
+  </data>
+  <data name="Backup.RealizarBackup" xml:space="preserve">
+    <value>Realizar Backup</value>
+  </data>
 </root>

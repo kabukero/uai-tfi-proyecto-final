@@ -363,4 +363,13 @@ Our Occupational Health and Safety Service is designed for organizations that re
   <data name="Master.TextoBackup" xml:space="preserve">
     <value>Backup</value>
   </data>
+  <data name="Backup.Encabezado" xml:space="preserve">
+    <value>Backup List</value>
+  </data>
+  <data name="Backup.Error" xml:space="preserve">
+    <value>An internal error occurred. Please try again later.</value>
+  </data>
+  <data name="Backup.RealizarBackup" xml:space="preserve">
+    <value>Perform Backup</value>
+  </data>
 </root>
