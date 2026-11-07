@@ -27,6 +27,43 @@
         </section>
 
         <div class="row">
+
+            <asp:Repeater ID="rptSubscripciones" runat="server"
+                OnItemDataBound="rptSubscripciones_ItemDataBound">
+                <ItemTemplate>
+
+                    <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+                        <h2>
+                            <asp:Literal
+                                runat="server"
+                                Text='<%# Eval("Titulo") %>' />
+                        </h2>
+                        <p>
+                            <asp:Literal
+                                runat="server"
+                                Text='<%# Eval("Descripcion") %>' />
+                        </p>
+                        <p class="fs-3 fw-bold text-success mb-0">
+                            <asp:Literal
+                                runat="server"
+                                Text='<%# Eval("Precio", "${0:N2}") %>' />
+                        </p>
+                        <p>
+                            <asp:Button ID="BtnAgregarPlan"
+                                runat="server"
+                                Text="<%$ Resources:Labels, Default.BotonContratar %>"
+                                CssClass="btn btn-primary btn-md"
+                                CommandArgument='<%# Eval("Id") %>'
+                                OnCommand="BtnAgregarPlan_Command" />
+                        </p>
+                    </section>
+
+                </ItemTemplate>
+            </asp:Repeater>
+
+        </div>
+
+<%--        <div class="row">
             <section class="col-md-4" aria-labelledby="gettingStartedTitle">
                 <h2>
                     <asp:Literal
@@ -94,5 +131,7 @@
                 </p>
             </section>
         </div>
+--%>
+
     </main>
 </asp:Content>

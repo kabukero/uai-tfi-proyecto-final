@@ -54,6 +54,7 @@ namespace Web
             HyperLinkIncidentes.Visible = MostrarIncidenteLink;
             HyperLinkInventario.Visible = MostrarInventarioLink;
             HyperLinkBackup.Visible = MostrarBackupLink;
+            HyperLinkFactura.Visible = MostrarCarritoLink;
 
             //HyperLinkCarrito.Visible = usuarioManager.TienePermiso((Usuario)Session["UsuarioLogueado"], SistemaConfiguracion.ABM_ORDEN);
             //HyperLinkProveedor.Visible = usuarioManager.TienePermiso((Usuario)Session["UsuarioLogueado"], SistemaConfiguracion.ABM_PROVEEDOR);

@@ -372,4 +372,19 @@ Unser Arbeitssicherheits- und Hygienedienst richtet sich an Unternehmen, die ext
   <data name="Backup.RealizarBackup" xml:space="preserve">
     <value>Backup durchführen.</value>
   </data>
+  <data name="Carrito.Encabezado" xml:space="preserve">
+    <value>Einkaufswagen</value>
+  </data>
+  <data name="Carrito.CarritoVacio" xml:space="preserve">
+    <value>Der Einkaufswagen ist leer</value>
+  </data>
+  <data name="Carrito.Remover" xml:space="preserve">
+    <value>Löschen</value>
+  </data>
+  <data name="Factura.Encabezado" xml:space="preserve">
+    <value>Rechnungsliste</value>
+  </data>
+  <data name="Master.TextoFactura" xml:space="preserve">
+    <value>Rechnungen</value>
+  </data>
 </root>

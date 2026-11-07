@@ -372,4 +372,19 @@ Our Occupational Health and Safety Service is designed for organizations that re
   <data name="Backup.RealizarBackup" xml:space="preserve">
     <value>Perform Backup</value>
   </data>
+  <data name="Carrito.Encabezado" xml:space="preserve">
+    <value>Shopping Cart</value>
+  </data>
+  <data name="Carrito.CarritoVacio" xml:space="preserve">
+    <value>The shopping cart is empty</value>
+  </data>
+  <data name="Carrito.Remover" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="Factura.Encabezado" xml:space="preserve">
+    <value>Invoice LIst</value>
+  </data>
+  <data name="Master.TextoFactura" xml:space="preserve">
+    <value>Invoices</value>
+  </data>
 </root>

@@ -44,6 +44,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.6.2\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.6, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.6\lib\net461\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
@@ -122,9 +128,12 @@
     <Content Include="Content\Images\protekta-logo.jpeg" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
+    <Content Include="FacturaComprobante.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="IntegridadDatosRecalcularActualizarReset.aspx" />
+    <Content Include="ListadoCarrito.aspx" />
+    <Content Include="ListadoFactura.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Logout.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -183,6 +192,7 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="SubscripcionWS.asmx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -244,6 +254,13 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FacturaComprobante.aspx.cs">
+      <DependentUpon>FacturaComprobante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FacturaComprobante.aspx.designer.cs">
+      <DependentUpon>FacturaComprobante.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -253,6 +270,20 @@
     </Compile>
     <Compile Include="IntegridadDatosRecalcularActualizarReset.aspx.designer.cs">
       <DependentUpon>IntegridadDatosRecalcularActualizarReset.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListadoCarrito.aspx.cs">
+      <DependentUpon>ListadoCarrito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListadoCarrito.aspx.designer.cs">
+      <DependentUpon>ListadoCarrito.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListadoFactura.aspx.cs">
+      <DependentUpon>ListadoFactura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListadoFactura.aspx.designer.cs">
+      <DependentUpon>ListadoFactura.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -282,6 +313,10 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SubscripcionWS.asmx.cs">
+      <DependentUpon>SubscripcionWS.asmx</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

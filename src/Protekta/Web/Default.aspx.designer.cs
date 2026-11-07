@@ -51,84 +51,12 @@ namespace Web
         protected global::System.Web.UI.WebControls.Literal EmpresaDescripcion;
 
         /// <summary>
-        /// EncabezadoPrevencionTradicional control.
+        /// rptSubscripciones control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal EncabezadoPrevencionTradicional;
-
-        /// <summary>
-        /// DescriptionPrevencionTradicional control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal DescriptionPrevencionTradicional;
-
-        /// <summary>
-        /// BtnPlanPrevencionTradicional control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnPlanPrevencionTradicional;
-
-        /// <summary>
-        /// EncabezadoGestionDigital control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal EncabezadoGestionDigital;
-
-        /// <summary>
-        /// DescripcionGestionDigital control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal DescripcionGestionDigital;
-
-        /// <summary>
-        /// BtnPlanGestionDigital control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnPlanGestionDigital;
-
-        /// <summary>
-        /// EncabezadoPrevencionIA control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal EncabezadoPrevencionIA;
-
-        /// <summary>
-        /// DescripcionPrevencionIA control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal DescripcionPrevencionIA;
-
-        /// <summary>
-        /// BtnPlanPrevencionIA control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnPlanPrevencionIA;
+        protected global::System.Web.UI.WebControls.Repeater rptSubscripciones;
     }
 }

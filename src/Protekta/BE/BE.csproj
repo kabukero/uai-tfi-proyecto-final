@@ -45,14 +45,20 @@
     <Compile Include="Bitacora.cs" />
     <Compile Include="BitacoraTipoEvento.cs" />
     <Compile Include="BitacoraTipoEventoEnum.cs" />
+    <Compile Include="Carrito.cs" />
+    <Compile Include="CarritoDetalle.cs" />
+    <Compile Include="Factura.cs" />
+    <Compile Include="FacturaDetalle.cs" />
     <Compile Include="Idioma.cs" />
     <Compile Include="LoginEstado.cs" />
     <Compile Include="LoginRespuesta.cs" />
+    <Compile Include="MedioPago.cs" />
     <Compile Include="Permiso.cs" />
     <Compile Include="PermisoCompuesto.cs" />
     <Compile Include="PermisoSimple.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SistemaConfiguracion.cs" />
+    <Compile Include="Subscripcion.cs" />
     <Compile Include="Usuario.cs" />
     <Compile Include="VerificarIntegridadRespuesta.cs" />
   </ItemGroup>

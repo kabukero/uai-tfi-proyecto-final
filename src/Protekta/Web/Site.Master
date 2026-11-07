@@ -109,8 +109,16 @@
                                     ID="HyperLinkCarrito"
                                     runat="server"
                                     CssClass="nav-link"
-                                    NavigateUrl="~/Default"
+                                    NavigateUrl="~/ListadoCarrito"
                                     Text="<%$ Resources:Labels, Master.TextoCarrito %>" />
+                            </li>
+                            <li class="nav-item">
+                                <asp:HyperLink
+                                    ID="HyperLinkFactura"
+                                    runat="server"
+                                    CssClass="nav-link"
+                                    NavigateUrl="~/ListadoFactura"
+                                    Text="<%$ Resources:Labels, Master.TextoFactura %>" />
                             </li>
                             <li class="nav-item">
                                 <asp:HyperLink

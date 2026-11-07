@@ -234,7 +234,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Servicio.
+        ///   Looks up a localized string similar to Servicios.
         /// </summary>
         internal static string AcercaDe_TextoServicio {
             get {
@@ -423,6 +423,33 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to El carrito esta vacio.
+        /// </summary>
+        internal static string Carrito_CarritoVacio {
+            get {
+                return ResourceManager.GetString("Carrito.CarritoVacio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Carrito de Compras.
+        /// </summary>
+        internal static string Carrito_Encabezado {
+            get {
+                return ResourceManager.GetString("Carrito.Encabezado", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remover.
+        /// </summary>
+        internal static string Carrito_Remover {
+            get {
+                return ResourceManager.GetString("Carrito.Remover", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Argentina, CABA, Av. Cabildo 123.
         /// </summary>
         internal static string Contacto_Direccion {
@@ -567,7 +594,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Servicio de higiene y seguridad.
+        ///   Looks up a localized string similar to Planes: Servicios de higiene y seguridad.
         /// </summary>
         internal static string Default_EncabezadoPrincipal {
             get {
@@ -590,6 +617,15 @@ namespace Resources {
         internal static string Default_TituloPagina {
             get {
                 return ResourceManager.GetString("Default.TituloPagina", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Listado de Facturas.
+        /// </summary>
+        internal static string Factura_Encabezado {
+            get {
+                return ResourceManager.GetString("Factura.Encabezado", resourceCulture);
             }
         }
         
@@ -743,6 +779,15 @@ namespace Resources {
         internal static string Master_TextoCliente {
             get {
                 return ResourceManager.GetString("Master.TextoCliente", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Facturas.
+        /// </summary>
+        internal static string Master_TextoFactura {
+            get {
+                return ResourceManager.GetString("Master.TextoFactura", resourceCulture);
             }
         }
         

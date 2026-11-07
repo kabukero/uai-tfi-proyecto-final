@@ -34,7 +34,8 @@ namespace BLL
             }
 
             // validar si la password es correcta
-            if (usuario.Password != encriptadorManager.Encriptar(password))
+            string passwordEncriptada = encriptadorManager.Encriptar(password);
+            if (usuario.Password != passwordEncriptada)
             {
                 loginRespuesta.LoginEstado = LoginEstado.PasswordIncorrecta;
                 return loginRespuesta;
