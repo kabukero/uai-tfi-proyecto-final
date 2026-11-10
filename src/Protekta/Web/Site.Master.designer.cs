@@ -132,13 +132,13 @@ namespace Web
         protected global::System.Web.UI.WebControls.HyperLink HyperLinkUsuarioLogin;
 
         /// <summary>
-        /// HyperLink5 control.
+        /// LogoutControlWebForm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink5;
+        protected global::Web.LogoutControl LogoutControlWebForm;
 
         /// <summary>
         /// ddlLanguage control.

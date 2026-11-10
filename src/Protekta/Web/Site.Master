@@ -1,4 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Web.SiteMaster" %>
+<%@ Register Src="~/LogoutControl.ascx" TagPrefix="uc" TagName="Logout" %>
 
 <!DOCTYPE html>
 
@@ -161,12 +162,7 @@
                                 Text="" />
                             </li>
                             <li class="nav-item">
-                                <asp:HyperLink
-                                    ID="HyperLink5"
-                                    runat="server"
-                                    CssClass="nav-link"
-                                    NavigateUrl="~/Logout"
-                                    Text="<%$ Resources:Labels, Master.TextoLogout %>" />
+                                <uc:Logout ID="LogoutControlWebForm" runat="server" />
                             </li>
                         <%
                             }
