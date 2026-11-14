@@ -387,4 +387,38 @@ Nuestro Servicio de Higiene y Seguridad esta pensado para aquellos que requieran
   <data name="Master.TextoFactura" xml:space="preserve">
     <value>Facturas</value>
   </data>
+  <data name="Master.TextoLinkRegistrarse" xml:space="preserve">
+    <value>Registrarse</value>
+  </data>
+  <data name="Registrase.Encabezado" xml:space="preserve">
+    <value>Registrase</value>
+  </data>
+  <data name="Registrarse.TextConfirmacionPassword" xml:space="preserve">
+    <value>Confirmar Password</value>
+  </data>
+  <data name="Registrarse.TextoValidacionConfirmacionPassword" xml:space="preserve">
+    <value>Confirmar el password</value>
+  </data>
+  <data name="Registrarse.TextoValidacionPasswordsNoCoinciden" xml:space="preserve">
+    <value>Las passwords no coinciden.</value>
+    <comment>Las passwords no coinciden. </comment>
+  </data>
+  <data name="Registrarse.TextoRegistrar" xml:space="preserve">
+    <value>Registrar</value>
+  </data>
+  <data name="Registrarse.TextoValidacionPasswordDebil" xml:space="preserve">
+    <value>La password debe contener al menos una letra mayuscula, un numero, un simbo y al menos 8 caracteres y como maximo 50 caracteres.</value>
+  </data>
+  <data name="Registrarse.ErrorMensajeValidacionNombre" xml:space="preserve">
+    <value>Ingrese el nombre por favor</value>
+  </data>
+  <data name="Registrarse.ErrorMensajeValidacionApellido" xml:space="preserve">
+    <value>Ingresar el apellido</value>
+  </data>
+  <data name="Registrarse.TextoNombre" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="Registrarse.TextoApellido" xml:space="preserve">
+    <value>Apellido</value>
+  </data>
 </root>

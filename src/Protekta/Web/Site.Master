@@ -86,6 +86,14 @@
                                     NavigateUrl="~/Login"
                                     Text="<%$ Resources:Labels, Master.TextoLinkLogin %>" />
                             </li>
+                            <li class="nav-item">
+                                <asp:HyperLink
+                                    ID="HyperLink5"
+                                    runat="server"
+                                    CssClass="nav-link"
+                                    NavigateUrl="~/Registrarse"
+                                    Text="<%$ Resources:Labels, Master.TextoLinkRegistrarse %>" />
+                            </li>
                         <%
                             } else {
                         %>

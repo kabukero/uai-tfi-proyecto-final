@@ -846,6 +846,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Registrarse.
+        /// </summary>
+        internal static string Master_TextoLinkRegistrarse {
+            get {
+                return ResourceManager.GetString("Master.TextoLinkRegistrarse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Salir.
         /// </summary>
         internal static string Master_TextoLogout {
@@ -860,6 +869,96 @@ namespace Resources {
         internal static string Master_TextoProveedor {
             get {
                 return ResourceManager.GetString("Master.TextoProveedor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ingresar el apellido.
+        /// </summary>
+        internal static string Registrarse_ErrorMensajeValidacionApellido {
+            get {
+                return ResourceManager.GetString("Registrarse.ErrorMensajeValidacionApellido", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ingrese el nombre por favor.
+        /// </summary>
+        internal static string Registrarse_ErrorMensajeValidacionNombre {
+            get {
+                return ResourceManager.GetString("Registrarse.ErrorMensajeValidacionNombre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Confirmar Password.
+        /// </summary>
+        internal static string Registrarse_TextConfirmacionPassword {
+            get {
+                return ResourceManager.GetString("Registrarse.TextConfirmacionPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Apellido.
+        /// </summary>
+        internal static string Registrarse_TextoApellido {
+            get {
+                return ResourceManager.GetString("Registrarse.TextoApellido", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nombre.
+        /// </summary>
+        internal static string Registrarse_TextoNombre {
+            get {
+                return ResourceManager.GetString("Registrarse.TextoNombre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Registrar.
+        /// </summary>
+        internal static string Registrarse_TextoRegistrar {
+            get {
+                return ResourceManager.GetString("Registrarse.TextoRegistrar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Confirmar el password.
+        /// </summary>
+        internal static string Registrarse_TextoValidacionConfirmacionPassword {
+            get {
+                return ResourceManager.GetString("Registrarse.TextoValidacionConfirmacionPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to La password debe contener al menos una letra mayuscula, un numero, un simbo y al menos 8 caracteres y como maximo 50 caracteres..
+        /// </summary>
+        internal static string Registrarse_TextoValidacionPasswordDebil {
+            get {
+                return ResourceManager.GetString("Registrarse.TextoValidacionPasswordDebil", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Las passwords no coinciden..
+        /// </summary>
+        internal static string Registrarse_TextoValidacionPasswordsNoCoinciden {
+            get {
+                return ResourceManager.GetString("Registrarse.TextoValidacionPasswordsNoCoinciden", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Registrase.
+        /// </summary>
+        internal static string Registrase_Encabezado {
+            get {
+                return ResourceManager.GetString("Registrase.Encabezado", resourceCulture);
             }
         }
     }

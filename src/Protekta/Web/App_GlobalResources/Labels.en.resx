@@ -387,4 +387,37 @@ Our Occupational Health and Safety Service is designed for organizations that re
   <data name="Master.TextoFactura" xml:space="preserve">
     <value>Invoices</value>
   </data>
+  <data name="Master.TextoLinkRegistrarse" xml:space="preserve">
+    <value>Sign Up</value>
+  </data>
+  <data name="Registrase.Encabezado" xml:space="preserve">
+    <value>Sign Up</value>
+  </data>
+  <data name="Registrarse.TextConfirmacionPassword" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="Registrarse.TextoValidacionConfirmacionPassword" xml:space="preserve">
+    <value>Please confirm the password</value>
+  </data>
+  <data name="Registrarse.TextoValidacionPasswordsNoCoinciden" xml:space="preserve">
+    <value>Passwords do not match</value>
+  </data>
+  <data name="Registrarse.TextoRegistrar" xml:space="preserve">
+    <value>Sign Up</value>
+  </data>
+  <data name="Registrarse.TextoValidacionPasswordDebil" xml:space="preserve">
+    <value>The password must contain at least one uppercase letter, one number, one symbol, and be between 8 and 50 characters long.</value>
+  </data>
+  <data name="Registrarse.ErrorMensajeValidacionNombre" xml:space="preserve">
+    <value>Please enter your name</value>
+  </data>
+  <data name="Registrarse.ErrorMensajeValidacionApellido" xml:space="preserve">
+    <value>Please enter you lastname</value>
+  </data>
+  <data name="Registrarse.TextoNombre" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="Registrarse.TextoApellido" xml:space="preserve">
+    <value>Lastname</value>
+  </data>
 </root>

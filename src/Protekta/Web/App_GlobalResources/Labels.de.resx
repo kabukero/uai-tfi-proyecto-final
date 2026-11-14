@@ -387,4 +387,37 @@ Unser Arbeitssicherheits- und Hygienedienst richtet sich an Unternehmen, die ext
   <data name="Master.TextoFactura" xml:space="preserve">
     <value>Rechnungen</value>
   </data>
+  <data name="Master.TextoLinkRegistrarse" xml:space="preserve">
+    <value>Registrieren</value>
+  </data>
+  <data name="Registrase.Encabezado" xml:space="preserve">
+    <value>Registrieren</value>
+  </data>
+  <data name="Registrarse.TextConfirmacionPassword" xml:space="preserve">
+    <value>Passwort bestätigen</value>
+  </data>
+  <data name="Registrarse.TextoValidacionConfirmacionPassword" xml:space="preserve">
+    <value>Bitte bestätigen Sie das Passwort.</value>
+  </data>
+  <data name="Registrarse.TextoValidacionPasswordsNoCoinciden" xml:space="preserve">
+    <value>Die Passwörter stimmen nicht überein.</value>
+  </data>
+  <data name="Registrarse.TextoRegistrar" xml:space="preserve">
+    <value>Registrieren</value>
+  </data>
+  <data name="Registrarse.TextoValidacionPasswordDebil" xml:space="preserve">
+    <value>Das Passwort muss mindestens einen Großbuchstaben, eine Zahl und ein Sonderzeichen enthalten und zwischen 8 und 50 Zeichen lang sein.</value>
+  </data>
+  <data name="Registrarse.ErrorMensajeValidacionNombre" xml:space="preserve">
+    <value>Bitte geben Sie Ihren Namen ein.</value>
+  </data>
+  <data name="Registrarse.ErrorMensajeValidacionApellido" xml:space="preserve">
+    <value>Bitte geben Sie Ihren Nachnamen ein.</value>
+  </data>
+  <data name="Registrarse.TextoNombre" xml:space="preserve">
+    <value>Vorname</value>
+  </data>
+  <data name="Registrarse.TextoApellido" xml:space="preserve">
+    <value>Nachname</value>
+  </data>
 </root>
