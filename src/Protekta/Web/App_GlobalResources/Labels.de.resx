@@ -420,4 +420,7 @@ Unser Arbeitssicherheits- und Hygienedienst richtet sich an Unternehmen, die ext
   <data name="Registrarse.TextoApellido" xml:space="preserve">
     <value>Nachname</value>
   </data>
+  <data name="Bitacora.MensajeCrearCliente" xml:space="preserve">
+    <value>Ein neuer Kunde wurde im System angelegt.</value>
+  </data>
 </root>

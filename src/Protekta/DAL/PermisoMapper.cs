@@ -128,5 +128,17 @@ namespace DAL
 
             return permiso;
         }
+
+        public void CrearUsuarioClientePermisos(Usuario usuario)
+        {
+            string query = @"INSERT INTO UsuarioPermiso (UsuarioId,PermisoId)
+                            OUTPUT INSERTED.UsuarioId
+                            VALUES (@UsuarioId,3)";
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+                new SqlParameter("@UsuarioId", usuario.Id),
+            };
+            SqlHelper.Insertar(query, parameters);
+        }
     }
 }

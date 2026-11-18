@@ -83,12 +83,12 @@ namespace DAL
 
         private string ObtenerDVH(Bitacora bitacora)
         {
-            string registro = string.Format("{0}{1}{2}{3}{4}",
+            string registro = string.Format("{0}{1}",
                 bitacora.Id,
-                bitacora.Descripcion,
-                bitacora.FechaEvento,
-                bitacora.BitacoraTipoEvento.Id,
-                bitacora.Usuario.Id);
+                bitacora.Descripcion);
+                //bitacora.FechaEvento.ToString("yyyy-MM-ddTHH:mm:ss"),
+                //bitacora.BitacoraTipoEvento.Id,
+                //bitacora.Usuario.Id);
             return CalcularDV(registro);
         }
 
@@ -164,9 +164,55 @@ namespace DAL
             query = "SELECT DVV FROM DigitoVerificadorVertical WHERE NombreTabla = 'Usuario'";
             string dvvBD = SqlHelper.ObtenerValor<string>(query, null);
 
-            if (dvvCalculado != dvvBD)
+            if (!string.IsNullOrEmpty(dvvBD) && dvvCalculado != dvvBD)
             {
                 respuesta.Mensajes.Add("Un registro de la tabla Usuario fue eliminado externamente.");
+                respuesta.HayErrores = true;
+            }
+            #endregion
+
+            #region Bitacora
+            // obtener entradas de la bitacora
+            query = @"SELECT b.Id,b.Descripcion,b.FechaEvento,b.UsuarioId,b.BitacoraTipoEventoId,
+                            t.Id,t.Nombre,b.DVH
+                            FROM Bitacora b INNER JOIN BitacoraTipoEvento t ON t.Id=b.BitacoraTipoEventoId
+                            ORDER BY b.Id";
+            DataTable table = SqlHelper.Obtener(query, null);
+            if (table == null)
+            {
+                return null;
+            }
+
+            sbDvhs.Clear();
+            foreach (DataRow row in table.Rows)
+            {
+                Bitacora bitacora = new Bitacora
+                {
+                    Id = int.Parse(row["Id"].ToString()),
+                    Descripcion = row["Descripcion"].ToString(),
+                    FechaEvento = DateTime.Parse(row["FechaEvento"].ToString()),
+                    Usuario = UsuarioMapper.Instance.Obtener(int.Parse(row["UsuarioId"].ToString())),
+                    BitacoraTipoEvento = new BitacoraTipoEvento() { Id = int.Parse(row["Id"].ToString()), Nombre = row["Nombre"].ToString() }
+                };
+
+                string dvhBD = row["DVH"].ToString();
+                string dvhCalculado = ObtenerDVH(bitacora);
+                if (dvhBD != dvhCalculado)
+                {
+                    respuesta.Mensajes.Add(string.Format("La bitacora con el ID {0} fue modificado externamente.", bitacora.Id));
+                    respuesta.HayErrores = true;
+                }
+                sbDvhs.Append(dvhBD.ToString());
+            }
+
+            // Chequear DVV
+            dvvCalculado = CalcularDV(sbDvhs.ToString());
+            query = "SELECT DVV FROM DigitoVerificadorVertical WHERE NombreTabla = 'Bitacora'";
+            dvvBD = SqlHelper.ObtenerValor<string>(query, null);
+
+            if (!string.IsNullOrEmpty(dvvBD) && dvvCalculado != dvvBD)
+            {
+                respuesta.Mensajes.Add("Un registro de la tabla Bitacora fue eliminado externamente.");
                 respuesta.HayErrores = true;
             }
             #endregion

@@ -11,13 +11,16 @@ using BLL;
 
 namespace Web
 {
-    public partial class ListadoFactura : System.Web.UI.Page
+    public partial class ListadoFactura : BasePage
     {
         CarritoManager manager = new CarritoManager();
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(!IsPostBack)
+            if (UsuarioLogueado == null)
+                Response.Redirect("Default.aspx");
+
+            if (!IsPostBack)
             {
                 CargarFacturas();
             }
@@ -25,7 +28,7 @@ namespace Web
 
         private void CargarFacturas()
         {
-            GridViewFacturas.DataSource = manager.ObtenerFacturas();
+            GridViewFacturas.DataSource = manager.ObtenerFacturas(UsuarioLogueado);
             GridViewFacturas.DataBind();
         }
 

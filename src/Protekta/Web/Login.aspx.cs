@@ -2,6 +2,7 @@
 using BE;
 using BLL;
 using Resources;
+using static iTextSharp.text.pdf.AcroFields;
 
 namespace Web
 {
@@ -27,12 +28,30 @@ namespace Web
             try
             {
                 // verificar integridad datos
+                BE.Bitacora bitacora = null;
                 VerificarIntegridadRespuesta integridadRespuesta = integridadDatosManager.VerificarIntegridad();
                 if(integridadRespuesta == null || integridadRespuesta.HayErrores)
                 {
                     // mostrar mensaje de error
-                    lblLoginError.Text = Labels.Login_ErrorMensajeIntegridadDatos;
+                    string ErrorMensajes = string.Join(" ", integridadRespuesta.Mensajes);
+                    lblLoginError.Text = ErrorMensajes;
                     pnlLoginError.Visible = true;
+
+                    // registrar evento login en la bitacora
+                    bitacora = new BE.Bitacora()
+                    {
+                        Descripcion = ErrorMensajes,
+                        FechaEvento = DateTime.Now,
+                        Usuario = new Usuario() { Id = 1 },
+                        BitacoraTipoEvento = new BitacoraTipoEvento()
+                        {
+                            Id = (int)BitacoraTipoEventoEnum.Error
+                        }
+                    };
+                    bitacora.Id = bitacoraManager.Alta(bitacora);
+
+                    // recalcular usuario DV
+                    integridadDatosManager.ActualizarDV(bitacora);
                     return;
                 }
 
@@ -97,7 +116,7 @@ namespace Web
                 integridadDatosManager.ActualizarDV(UsuarioLogueado);
 
                 // registrar evento login en la bitacora
-                BE.Bitacora bitacora = new BE.Bitacora()
+                bitacora = new BE.Bitacora()
                 {
                     Descripcion = Labels.Bitacora_MensajeLogin,
                     FechaEvento = DateTime.Now,

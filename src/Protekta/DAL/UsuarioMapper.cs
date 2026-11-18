@@ -174,5 +174,26 @@ namespace DAL
             string query = "UPDATE Usuario SET Activo=1";
             SqlHelper.Ejecutar(query, null);
         }
+
+        public void AgregarCliente(Usuario usuario)
+        {
+            string query = @"INSERT INTO Usuario (Nombre,Apellido,Email,Password,IdIdioma,Activo,DVH)
+                            OUTPUT INSERTED.Id
+                            VALUES (@Nombre,@Apellido,@Email,@Password,@IdIdioma,1,'123')";
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+                    new SqlParameter("@Nombre", usuario.Nombre),
+                    new SqlParameter("@Apellido", usuario.Apellido),
+                    new SqlParameter("@Email", usuario.Email),
+                    new SqlParameter("@Password", usuario.Password),
+                    new SqlParameter("@IdIdioma", usuario.Idioma.Id),
+            };
+
+            int nuevoUsuarioId = SqlHelper.Insertar(query, parameters);
+
+            usuario.Id = nuevoUsuarioId;
+
+            PermisoMapper.Instance.CrearUsuarioClientePermisos(usuario);
+        }
     }
 }

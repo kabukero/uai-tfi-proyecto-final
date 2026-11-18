@@ -414,6 +414,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Se creo un cliente en el sistema.
+        /// </summary>
+        internal static string Bitacora_MensajeCrearCliente {
+            get {
+                return ResourceManager.GetString("Bitacora.MensajeCrearCliente", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Login: usuario inicio sesion.
         /// </summary>
         internal static string Bitacora_MensajeLogin {
@@ -954,7 +963,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Registrase.
+        ///   Looks up a localized string similar to Registrarse.
         /// </summary>
         internal static string Registrase_Encabezado {
             get {

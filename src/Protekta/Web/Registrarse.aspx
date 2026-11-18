@@ -75,14 +75,15 @@
                         <div class="col-md-10">
 
                             <asp:TextBox runat="server" ID="TxtPassword" TextMode="Password" CssClass="form-control" MaxLength="50" />
+                            
                             <asp:RequiredFieldValidator runat="server" ControlToValidate="TxtPassword" CssClass="text-danger" 
-                                ErrorMessage="<%$ Resources:Labels, Login.ErrorMensajeValidacionPassword %>" ValidationGroup="Login" />
+                                ErrorMessage="<%$ Resources:Labels, Login.ErrorMensajeValidacionPassword %>" ValidationGroup="Registrarse" />
 
                             <asp:RegularExpressionValidator runat="server"
                                 ControlToValidate="TxtPassword"
                                 CssClass="text-danger"
                                 ValidationExpression="^(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9\s]).{8,}$"
-                                ErrorMessage="<%$ Resources:Labels, Registrarse.TextoValidacionPasswordsNoCoinciden %>"
+                                ErrorMessage="<%$ Resources:Labels, Registrarse.TextoValidacionPasswordDebil %>"
                                 ValidationGroup="Registrarse"
                                 Display="Dynamic" />
 
@@ -122,7 +123,7 @@
 
                     <div class="form-group mb-4">
                         <div class="col-md-offset-2 col-md-10">
-                            <asp:Button runat="server" OnClick="Registrar" Text="<%$ Resources:Labels, Registrarse.TextoRegistrar %>" CssClass="btn btn-primary btn-md" ValidationGroup="Login" />
+                            <asp:Button runat="server" OnClick="Registrar" Text="<%$ Resources:Labels, Registrarse.TextoRegistrar %>" CssClass="btn btn-primary btn-md" ValidationGroup="Registrarse" />
                         </div>
                     </div>
 

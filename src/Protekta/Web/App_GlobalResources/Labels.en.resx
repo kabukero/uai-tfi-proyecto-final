@@ -420,4 +420,7 @@ Our Occupational Health and Safety Service is designed for organizations that re
   <data name="Registrarse.TextoApellido" xml:space="preserve">
     <value>Lastname</value>
   </data>
+  <data name="Bitacora.MensajeCrearCliente" xml:space="preserve">
+    <value>New customer was created in the system</value>
+  </data>
 </root>

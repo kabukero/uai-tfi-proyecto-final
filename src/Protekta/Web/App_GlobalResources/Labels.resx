@@ -391,7 +391,7 @@ Nuestro Servicio de Higiene y Seguridad esta pensado para aquellos que requieran
     <value>Registrarse</value>
   </data>
   <data name="Registrase.Encabezado" xml:space="preserve">
-    <value>Registrase</value>
+    <value>Registrarse</value>
   </data>
   <data name="Registrarse.TextConfirmacionPassword" xml:space="preserve">
     <value>Confirmar Password</value>
@@ -420,5 +420,8 @@ Nuestro Servicio de Higiene y Seguridad esta pensado para aquellos que requieran
   </data>
   <data name="Registrarse.TextoApellido" xml:space="preserve">
     <value>Apellido</value>
+  </data>
+  <data name="Bitacora.MensajeCrearCliente" xml:space="preserve">
+    <value>Se creo un cliente en el sistema</value>
   </data>
 </root>

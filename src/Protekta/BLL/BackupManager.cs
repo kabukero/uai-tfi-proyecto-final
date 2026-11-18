@@ -25,11 +25,18 @@ namespace BLL
             string rutaBackup = ConfigurationManager.AppSettings.Get("ubicacionBackups");
             Directory.CreateDirectory(rutaBackup); // Si la carpeta no existe, la crea
 
-            string nombreArchivo = DateTime.Now.ToString(DATE_FORMAT_FOR_FILE);
-            mapper.HacerBackup(rutaBackup + nombreArchivo + ".bak");
+            string nombreArchivo = DateTime.Now.ToString(DATE_FORMAT_FOR_FILE + ".bak");
+            string rutaCompleta = Path.Combine(rutaBackup, nombreArchivo);
+            mapper.HacerBackup(rutaCompleta);
             backup.NombreArchivo = nombreArchivo;
             mapper.Alta(backup);
+        }
 
+        public void HacerRestore(string nombreArchivo)
+        {
+            string rutaBackup = ConfigurationManager.AppSettings.Get("ubicacionBackups");
+            string rutaCompleta = Path.Combine(rutaBackup, nombreArchivo);
+            mapper.RestaurarBackup(rutaCompleta);
         }
     }
 }

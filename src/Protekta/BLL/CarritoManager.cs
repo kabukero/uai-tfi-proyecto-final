@@ -50,9 +50,9 @@ namespace BLL
             return FacturaMapper.Instance.Obtener(Id);
         }
 
-        public List<Factura> ObtenerFacturas()
+        public List<Factura> ObtenerFacturas(Usuario usuario)
         {
-            return FacturaMapper.Instance.Obtener();
+            return FacturaMapper.Instance.Obtener(usuario);
         }
     }
 }

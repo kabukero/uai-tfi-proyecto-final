@@ -48,7 +48,7 @@ namespace DAL
 
         public List<Backup> Obtener()
         {
-            List<Backup> backup = new List<Backup>();
+            List<Backup> backups = new List<Backup>();
             string query = @"SELECT b.Id,b.FechaCreacion,b.NombreArchivo,
                             b.UsuarioId,u.Nombre,u.Apellido
                             FROM BackupSistema b INNER JOIN Usuario u ON u.Id=b.UsuarioId
@@ -61,7 +61,7 @@ namespace DAL
 
             foreach (DataRow row in table.Rows)
             {
-                backup.Add(
+                backups.Add(
                     new Backup
                     {
                         Id = int.Parse(row["Id"].ToString()),
@@ -76,7 +76,7 @@ namespace DAL
                     }
                  );
             }
-            return backup;
+            return backups;
         }
 
         public void HacerBackup(string ubicacion)
@@ -88,6 +88,19 @@ namespace DAL
                 new SqlParameter("@ubicacion", ubicacion)
             };
             SqlHelper.Ejecutar(query, parameters);
+        }
+
+        public void RestaurarBackup(string ubicacion)
+        {
+            string nombreBd = ConfigurationManager.AppSettings.Get("nombreBdPrincipal");
+            string query = "ALTER DATABASE " + nombreBd + " SET SINGLE_USER WITH ROLLBACK IMMEDIATE; " +
+                "RESTORE DATABASE " + nombreBd + " FROM DISK = @ubicacion WITH REPLACE; " +
+                "ALTER DATABASE " + nombreBd + " SET MULTI_USER;"; ;
+            SqlParameter[] parameters =
+            {
+                new SqlParameter("@ubicacion", ubicacion)
+            };
+            SqlHelper.EjecutarEnMaster(query, parameters);
         }
     }
 }

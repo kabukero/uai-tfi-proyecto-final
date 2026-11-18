@@ -81,7 +81,7 @@ namespace DAL
             return factura;
         }
 
-        public List<Factura> Obtener()
+        public List<Factura> Obtener(Usuario usuario)
         {
             string query = @"SELECT f.Id AS FacturaId,f.FechaCreacion,u.Id AS UsuarioId,u.Nombre AS NombreUsuario,u.Apellido AS ApellidoUsuario,
                             m.Id AS MedioPagoId,m.Nombre AS MedioPago,s.Titulo,fd.SubscripcionId,s.Descripcion,s.Precio,fd.Id AS FacturaDetalleId
@@ -90,8 +90,13 @@ namespace DAL
                             INNER JOIN Usuario u ON u.Id=f.UsuarioId
                             INNER JOIN MedioPago m ON m.Id=f.MedioPagoId
                             INNER JOIN Subscripcion s ON s.Id=fd.SubscripcionId
+                            WHERE f.UsuarioId=@UsuarioId
                             ORDER BY f.FechaCreacion DESC";
-            DataTable table = SqlHelper.Obtener(query, null);
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+                new SqlParameter("@UsuarioId", usuario.Id),
+            };
+            DataTable table = SqlHelper.Obtener(query, parameters);
 
             if (table == null || table.Rows.Count == 0)
             {

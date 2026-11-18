@@ -16,5 +16,10 @@ namespace BLL
         {
             return mapper.Obtener();
         }
+
+        public Idioma Obtener(string codigo)
+        {
+            return mapper.Obtener().Where(x => x.Codigo == codigo).FirstOrDefault();
+        }
     }
 }

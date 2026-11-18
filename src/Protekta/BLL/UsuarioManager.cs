@@ -76,5 +76,15 @@ namespace BLL
 
             return false;
         }
+
+        public void AgregarCliente(Usuario usuario)
+        {
+            mapper.AgregarCliente(usuario);
+        }
+
+        public Usuario Obtener(int id)
+        {
+            return mapper.Obtener(id);
+        }
     }
 }
