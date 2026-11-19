@@ -108,6 +108,7 @@
     <Content Include="AcercaDe.aspx" />
     <Content Include="Backup.aspx" />
     <Content Include="Bitacora.aspx" />
+    <Content Include="Cert\certificado-digital.xml" />
     <Content Include="Contacto.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />

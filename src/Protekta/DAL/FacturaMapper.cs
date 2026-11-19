@@ -81,6 +81,82 @@ namespace DAL
             return factura;
         }
 
+        public List<Factura> Obtener()
+        {
+            string query = @"SELECT f.Id AS FacturaId,f.FechaCreacion,u.Id AS UsuarioId,u.Nombre AS NombreUsuario,u.Apellido AS ApellidoUsuario,
+                            m.Id AS MedioPagoId,m.Nombre AS MedioPago,s.Titulo,fd.SubscripcionId,s.Descripcion,s.Precio,fd.Id AS FacturaDetalleId
+                            FROM Factura f
+                            INNER JOIN FacturaDetalle fd ON fd.FacturaId=f.Id
+                            INNER JOIN Usuario u ON u.Id=f.UsuarioId
+                            INNER JOIN MedioPago m ON m.Id=f.MedioPagoId
+                            INNER JOIN Subscripcion s ON s.Id=fd.SubscripcionId
+                            ORDER BY f.FechaCreacion DESC";
+            DataTable table = SqlHelper.Obtener(query, null);
+
+            if (table == null || table.Rows.Count == 0)
+            {
+                return new List<Factura>();
+            }
+
+            Dictionary<int, Factura> facturasDictionary =
+                new Dictionary<int, Factura>();
+
+            List<Factura> facturas = new List<Factura>();
+
+            foreach (DataRow row in table.Rows)
+            {
+                int facturaId = Convert.ToInt32(row["FacturaId"]);
+
+                Factura factura;
+
+                if (!facturasDictionary.TryGetValue(facturaId, out factura))
+                {
+                    factura = new Factura()
+                    {
+                        Id = facturaId,
+
+                        Fecha = Convert.ToDateTime(row["FechaCreacion"]),
+
+                        Usuario = new Usuario()
+                        {
+                            Id = Convert.ToInt32(row["UsuarioId"]),
+                            Nombre = row["NombreUsuario"].ToString(),
+                            Apellido = row["ApellidoUsuario"].ToString()
+                        },
+
+                        MedioPago = new MedioPago()
+                        {
+                            Id = Convert.ToInt32(row["MedioPagoId"]),
+                            Nombre = row["MedioPago"].ToString()
+                        },
+
+                        Detalles = new List<FacturaDetalle>()
+                    };
+
+                    facturasDictionary.Add(facturaId, factura);
+                    facturas.Add(factura);
+                }
+
+                Subscripcion subscripcion = new Subscripcion()
+                {
+                    Id = Convert.ToInt32(row["SubscripcionId"]),
+                    Titulo = row["Titulo"].ToString(),
+                    Descripcion = row["Descripcion"].ToString(),
+                    Precio = Convert.ToDecimal(row["Precio"])
+                };
+
+                FacturaDetalle detalle = new FacturaDetalle()
+                {
+                    Id = Convert.ToInt32(row["FacturaDetalleId"]),
+                    Subscripcion = subscripcion
+                };
+
+                factura.Detalles.Add(detalle);
+            }
+
+            return facturas;
+        }
+
         public List<Factura> Obtener(Usuario usuario)
         {
             string query = @"SELECT f.Id AS FacturaId,f.FechaCreacion,u.Id AS UsuarioId,u.Nombre AS NombreUsuario,u.Apellido AS ApellidoUsuario,

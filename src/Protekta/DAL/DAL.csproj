@@ -45,6 +45,7 @@
     <Compile Include="BackupMapper.cs" />
     <Compile Include="BitacoraMapper.cs" />
     <Compile Include="CarritoMapper.cs" />
+    <Compile Include="CertificadoDigitalValidator.cs" />
     <Compile Include="DigitoVerificadorMapper.cs" />
     <Compile Include="FacturaMapper.cs" />
     <Compile Include="MedioPagoMapper.cs" />

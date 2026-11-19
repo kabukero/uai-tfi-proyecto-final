@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CertificadoDigital>
+	<CertificadoID>CERT-2026-000123</CertificadoID>
+	<Emisor>Protekta</Emisor>
+	<FechaEmision>2026-11-18</FechaEmision>
+
+	<Factura>
+		<Numero>FAC-0001-00001234</Numero>
+		<Importe>150000.00</Importe>
+		<Moneda>ARS</Moneda>
+	</Factura>
+
+	<Usuario>
+		<Id>USR-001</Id>
+		<Nombre>Juan Perez</Nombre>
+	</Usuario>
+
+	<Tarjeta>
+		<Tipo>VISA</Tipo>
+		<UltimosDigitos>1234</UltimosDigitos>
+		<Titular>JUAN PEREZ</Titular>
+	</Tarjeta>
+
+	<Servicio>
+		<Id>SERV-001</Id>
+		<Nombre>Auditoria de Seguridad Laboral</Nombre>
+	</Servicio>
+
+	<Suscripcion>
+		<Aplica>true</Aplica>
+		<Id>SUB-001</Id>
+		<Plan>PREMIUM</Plan>
+	</Suscripcion>
+
+	<Validacion>
+		<Estado>VALIDADA</Estado>
+		<FechaValidacion>2026-11-18T15:00:00</FechaValidacion>
+	</Validacion>
+</CertificadoDigital>
